@@ -1,0 +1,522 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: GroundShock
+  serializedVersion: 4
+  m_AnimationType: 2
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .5
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock1
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .833333313
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock21
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .833333313
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock22
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1.16666663
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock31
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1.16666663
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock32
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1.5
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock41
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1.5
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock42
+    classID: 1
+    script: {fileID: 0}
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: 3e4fa37f3327be84fa7246cc17c802f3, type: 3}
+    - time: .0833333358
+      value: {fileID: 21300000, guid: c37ee594e524dba44a9e1e83b44684cd, type: 3}
+    - time: .166666672
+      value: {fileID: 21300000, guid: 9a7d98c465f563c4caed0fd47075f6d0, type: 3}
+    - time: .25
+      value: {fileID: 21300000, guid: 0a8c872a795bf2b40a6991b6f8c911ab, type: 3}
+    - time: .333333343
+      value: {fileID: 21300000, guid: da274fff4b01776478555c7eb6c5b356, type: 3}
+    - time: .416666657
+      value: {fileID: 21300000, guid: 5948c1c7b78e460468da988fc844f6b7, type: 3}
+    - time: .5
+      value: {fileID: 21300000, guid: 185a053160e033143b491081e62a286c, type: 3}
+    - time: .583333313
+      value: {fileID: 21300000, guid: 185a053160e033143b491081e62a286c, type: 3}
+    - time: .666666687
+      value: {fileID: 21300000, guid: 667fab0de0f96ac4f9c665bd522c3242, type: 3}
+    - time: .75
+      value: {fileID: 21300000, guid: d5f50e6bd2715114c9fc4ae31e65fda4, type: 3}
+    - time: .833333313
+      value: {fileID: 21300000, guid: 66dbd241da42d39458926fa37e99d434, type: 3}
+    - time: .916666687
+      value: {fileID: 21300000, guid: 1e51693e3b03d3541973729c0349fe1a, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: b637a056a57a8144d934c3bf7efe4def, type: 3}
+    - time: 1.08333337
+      value: {fileID: 21300000, guid: d5f50e6bd2715114c9fc4ae31e65fda4, type: 3}
+    - time: 1.16666663
+      value: {fileID: 21300000, guid: 66dbd241da42d39458926fa37e99d434, type: 3}
+    - time: 1.25
+      value: {fileID: 21300000, guid: 1e51693e3b03d3541973729c0349fe1a, type: 3}
+    - time: 1.33333337
+      value: {fileID: 21300000, guid: b637a056a57a8144d934c3bf7efe4def, type: 3}
+    - time: 1.41666663
+      value: {fileID: 21300000, guid: d5f50e6bd2715114c9fc4ae31e65fda4, type: 3}
+    - time: 1.5
+      value: {fileID: 21300000, guid: 66dbd241da42d39458926fa37e99d434, type: 3}
+    - time: 1.58333337
+      value: {fileID: 21300000, guid: 1e51693e3b03d3541973729c0349fe1a, type: 3}
+    - time: 1.66666663
+      value: {fileID: 21300000, guid: b637a056a57a8144d934c3bf7efe4def, type: 3}
+    - time: 1.75
+      value: {fileID: 21300000, guid: d5f50e6bd2715114c9fc4ae31e65fda4, type: 3}
+    - time: 1.83333325
+      value: {fileID: 21300000, guid: 66dbd241da42d39458926fa37e99d434, type: 3}
+    - time: 1.91666675
+      value: {fileID: 21300000, guid: 1e51693e3b03d3541973729c0349fe1a, type: 3}
+    - time: 2
+      value: {fileID: 21300000, guid: b637a056a57a8144d934c3bf7efe4def, type: 3}
+    - time: 2.08333325
+      value: {fileID: 21300000, guid: d5f50e6bd2715114c9fc4ae31e65fda4, type: 3}
+    - time: 2.16666651
+      value: {fileID: 21300000, guid: 66dbd241da42d39458926fa37e99d434, type: 3}
+    - time: 2.25
+      value: {fileID: 21300000, guid: 1e51693e3b03d3541973729c0349fe1a, type: 3}
+    - time: 2.33333325
+      value: {fileID: 21300000, guid: b637a056a57a8144d934c3bf7efe4def, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  m_SampleRate: 12
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 1685788309
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - path: 686858409
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2985947411
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - path: 837521896
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2833432658
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2125072175
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3886241429
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 0
+      script: {fileID: 0}
+      classID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: 3e4fa37f3327be84fa7246cc17c802f3, type: 3}
+    - {fileID: 21300000, guid: c37ee594e524dba44a9e1e83b44684cd, type: 3}
+    - {fileID: 21300000, guid: 9a7d98c465f563c4caed0fd47075f6d0, type: 3}
+    - {fileID: 21300000, guid: 0a8c872a795bf2b40a6991b6f8c911ab, type: 3}
+    - {fileID: 21300000, guid: da274fff4b01776478555c7eb6c5b356, type: 3}
+    - {fileID: 21300000, guid: 5948c1c7b78e460468da988fc844f6b7, type: 3}
+    - {fileID: 21300000, guid: 185a053160e033143b491081e62a286c, type: 3}
+    - {fileID: 21300000, guid: 185a053160e033143b491081e62a286c, type: 3}
+    - {fileID: 21300000, guid: 667fab0de0f96ac4f9c665bd522c3242, type: 3}
+    - {fileID: 21300000, guid: d5f50e6bd2715114c9fc4ae31e65fda4, type: 3}
+    - {fileID: 21300000, guid: 66dbd241da42d39458926fa37e99d434, type: 3}
+    - {fileID: 21300000, guid: 1e51693e3b03d3541973729c0349fe1a, type: 3}
+    - {fileID: 21300000, guid: b637a056a57a8144d934c3bf7efe4def, type: 3}
+    - {fileID: 21300000, guid: d5f50e6bd2715114c9fc4ae31e65fda4, type: 3}
+    - {fileID: 21300000, guid: 66dbd241da42d39458926fa37e99d434, type: 3}
+    - {fileID: 21300000, guid: 1e51693e3b03d3541973729c0349fe1a, type: 3}
+    - {fileID: 21300000, guid: b637a056a57a8144d934c3bf7efe4def, type: 3}
+    - {fileID: 21300000, guid: d5f50e6bd2715114c9fc4ae31e65fda4, type: 3}
+    - {fileID: 21300000, guid: 66dbd241da42d39458926fa37e99d434, type: 3}
+    - {fileID: 21300000, guid: 1e51693e3b03d3541973729c0349fe1a, type: 3}
+    - {fileID: 21300000, guid: b637a056a57a8144d934c3bf7efe4def, type: 3}
+    - {fileID: 21300000, guid: d5f50e6bd2715114c9fc4ae31e65fda4, type: 3}
+    - {fileID: 21300000, guid: 66dbd241da42d39458926fa37e99d434, type: 3}
+    - {fileID: 21300000, guid: 1e51693e3b03d3541973729c0349fe1a, type: 3}
+    - {fileID: 21300000, guid: b637a056a57a8144d934c3bf7efe4def, type: 3}
+    - {fileID: 21300000, guid: d5f50e6bd2715114c9fc4ae31e65fda4, type: 3}
+    - {fileID: 21300000, guid: 66dbd241da42d39458926fa37e99d434, type: 3}
+    - {fileID: 21300000, guid: 1e51693e3b03d3541973729c0349fe1a, type: 3}
+    - {fileID: 21300000, guid: b637a056a57a8144d934c3bf7efe4def, type: 3}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 2.41666651
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .5
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock1
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .833333313
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock21
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .833333313
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock22
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1.16666663
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock31
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1.16666663
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock32
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1.5
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock41
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1.5
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 2.33333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: GroundShock42
+    classID: 1
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_Events: []

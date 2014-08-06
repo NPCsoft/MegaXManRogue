@@ -1,0 +1,2716 @@
+fileFormatVersion: 2
+guid: 664a09b37f15fa84c8b8ac4c2df29fd8
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Roguesheet3_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1824
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1824
+        width: 112
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_3
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1824
+        width: 144
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1824
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_6
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1824
+        width: 127
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_7
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 1824
+        width: 127
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_9
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1824
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_10
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1824
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_11
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 1824
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_12
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1824
+        width: 83
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_13
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 1824
+        width: 68
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_14
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 1824
+        width: 73
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_15
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1824
+        width: 92
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1688
+        width: 92
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_17
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1688
+        width: 71
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_18
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1688
+        width: 69
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_19
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1688
+        width: 63
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_20
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1688
+        width: 63
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_21
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1688
+        width: 63
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_22
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1688
+        width: 80
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_23
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1688
+        width: 65
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_24
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1688
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_25
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1688
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_26
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1688
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1557
+        width: 109
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_32
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1557
+        width: 108
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_33
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 1557
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_34
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 1557
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_35
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1557
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_36
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1557
+        width: 123
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_37
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1557
+        width: 123
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_38
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1557
+        width: 123
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_39
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1557
+        width: 123
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_40
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1557
+        width: 142
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_41
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1557
+        width: 137
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_42
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1557
+        width: 137
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_43
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1557
+        width: 137
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_44
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1429
+        width: 89
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_45
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1429
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_46
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1417
+        width: 97
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_51
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1437
+        width: 109
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_52
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1437
+        width: 110
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_53
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1429
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_54
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 1429
+        width: 63
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_59
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1456
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_60
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1497
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_61
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1436
+        width: 94
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_62
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1435
+        width: 49
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_66
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1449
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_88
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1350
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_89
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1345
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_94
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1340
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_98
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1351
+        width: 60
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_101
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 1351
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_102
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1351
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_103
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1356
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_112
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1351
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_115
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1351
+        width: 64
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_117
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1351
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_132
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1356
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_146
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1217
+        width: 117
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_148
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1217
+        width: 102
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_151
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1217
+        width: 112
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_158
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1217
+        width: 79
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_159
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1217
+        width: 81
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_160
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1217
+        width: 94
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_170
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1040
+        width: 100
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_171
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1040
+        width: 96
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_172
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1040
+        width: 103
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_173
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 981
+        width: 100
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_174
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1040
+        width: 47
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_175
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1040
+        width: 62
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_176
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1017
+        width: 73
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_177
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1040
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_178
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 1010
+        width: 95
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_179
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 940
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_180
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 997
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_181
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1000
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_182
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 997
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_183
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 992
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_184
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 967
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_185
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 989
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_186
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 981
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_187
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 935
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_188
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 968
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_189
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 877
+        width: 28
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_190
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 945
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_191
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 941
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_192
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 940
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_193
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 950
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_194
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 946
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_195
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 944
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_196
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 953
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_197
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 940
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_198
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 941
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_199
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 926
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_200
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 933
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_201
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 926
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_202
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 931
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_203
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 923
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_204
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 926
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_205
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 935
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_206
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 928
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_207
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 919
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_208
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 877
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_209
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 877
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_210
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 912
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_211
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 910
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_212
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 889
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_213
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 881
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_214
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 877
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_215
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 884
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_216
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 879
+        width: 39
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_217
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 883
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_218
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 877
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_219
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 742
+        width: 93
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_220
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 742
+        width: 94
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_221
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 742
+        width: 105
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_222
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 838
+        width: 263
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_223
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 742
+        width: 117
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_224
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 742
+        width: 93
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_225
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 742
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_226
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 681
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_227
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 681
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_228
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 611
+        width: 58
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_229
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 614
+        width: 57
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_230
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 649
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_231
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 649
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_232
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 658
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_233
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 601
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_234
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 606
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_235
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 605
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_236
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 606
+        width: 74
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_237
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 617
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_238
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 617
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_239
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 565
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_240
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 630
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_241
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 632
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_242
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 574
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_243
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 584
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_244
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 588
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_245
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 578
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_246
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 554
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_247
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 538
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_248
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 572
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_249
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 572
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_250
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 571
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_251
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 578
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_252
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 565
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_253
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 561
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_254
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 548
+        width: 92
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_255
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 549
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_256
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 549
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_257
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 542
+        width: 69
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_258
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 565
+        width: 43
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_259
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 544
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_260
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 567
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_261
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 563
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_262
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 566
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_263
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 554
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_264
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 543
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_265
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 555
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_266
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 551
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_267
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 558
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_268
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 558
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_269
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 533
+        width: 69
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_270
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 558
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_271
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 561
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_272
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 561
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_273
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 558
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_274
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 552
+        width: 56
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_275
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 557
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_276
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 545
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_277
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 547
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_278
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 551
+        width: 43
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_279
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 548
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_280
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 548
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_281
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 548
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_282
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 551
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_283
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 551
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_284
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 551
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_285
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 543
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_286
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 535
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_287
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 543
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_288
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 437
+        width: 57
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_289
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 427
+        width: 121
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_290
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 426
+        width: 153
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_291
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 421
+        width: 230
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_292
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 409
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_293
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 421
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_294
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 283
+        width: 234
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_295
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 289
+        width: 127
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_296
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 388
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_297
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 399
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_298
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 384
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_299
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 385
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_300
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 386
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_301
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 388
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_302
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 386
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_303
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 280
+        width: 236
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_304
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 371
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_305
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 282
+        width: 224
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_306
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 362
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_307
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 363
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_308
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 348
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_309
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 358
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_310
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 293
+        width: 139
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_311
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 337
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_312
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 130
+        width: 236
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_313
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 129
+        width: 185
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_314
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 225
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_315
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 227
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_316
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 133
+        width: 36
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_317
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 205
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_318
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 190
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_319
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 194
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_320
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 194
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_321
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 206
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_322
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 194
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_323
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 193
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_324
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 196
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_325
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 196
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_326
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 170
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_327
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 177
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_328
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 175
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_329
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 188
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_330
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 145
+        width: 62
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_331
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 135
+        width: 11
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_332
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 179
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_333
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 144
+        width: 70
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_334
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 177
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_335
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 164
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_336
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 4
+        width: 112
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_337
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 4
+        width: 123
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_338
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 4
+        width: 153
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_339
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 4
+        width: 132
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_340
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 4
+        width: 127
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_341
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 4
+        width: 156
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_342
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 4
+        width: 123
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_343
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 4
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_344
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 4
+        width: 127
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_345
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 4
+        width: 127
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_346
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 4
+        width: 69
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_347
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 4
+        width: 85
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_348
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 4
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_349
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 4
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_349
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1824
+        width: 138
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_349
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1824
+        width: 69
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_349
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1824
+        width: 85
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_346
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1688
+        width: 63
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_345
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 1428
+        width: 72
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_326
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 1429
+        width: 73
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_317
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 1425
+        width: 74
+        height: 109
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_312
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1217
+        width: 103
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_309
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1217
+        width: 103
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_305
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1217
+        width: 115
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_304
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 1217
+        width: 94
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_303
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1217
+        width: 104
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_299
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 1217
+        width: 114
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_295
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 1217
+        width: 171
+        height: 184
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_296
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1321
+        width: 184
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_292
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1351
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_288
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1351
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_284
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1351
+        width: 55
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_277
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1351
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_277
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1343
+        width: 57
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roguesheet3_266
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1344
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
