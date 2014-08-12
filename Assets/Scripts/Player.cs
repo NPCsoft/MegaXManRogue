@@ -4,6 +4,8 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 	public Transform playerSprite;
+	public Animator currentboss;
+
 	public float speed = 4f;
 	public float walkSpeed = 4f;
 	public float dashSpeed = 15f;
@@ -39,6 +41,7 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		//timer limits control after walljumping
 		timer += Time.deltaTime;
 		//dashTimer limits the time a single ground dash lasts
@@ -82,10 +85,15 @@ public class Player : MonoBehaviour {
 //			hitstuntimer = 0f;
 //		}
 
-		float move = Input.GetAxis ("Horizontal");
 
-		//animation stuff
+		float move = Input.GetAxis ("Horizontal");
+		
+			//animation stuff
+		if (!currentboss.GetCurrentAnimatorStateInfo(0).IsName ("Intro")){
+
 		anim.SetFloat("Speed",Mathf.Abs (move));
+		}
+
 		if (Grounded)
 			anim.SetBool("Grounded",true);
 		else
@@ -118,8 +126,11 @@ public class Player : MonoBehaviour {
 			wallSlide = true;
 		else
 			wallSlide = false;
+		if (!currentboss.GetCurrentAnimatorStateInfo(0).IsName ("Intro")){
+
 		if (!anim.GetCurrentAnimatorStateInfo(0).IsName( "Webbed")){
 		//standard horizontal movement
+
 		if (move > 0.1 && WallRight != true && rigidbody2D.velocity.x == 0 || 
 		    move < -0.1 && WallLeft != true && rigidbody2D.velocity.x == 0)
 		{
@@ -277,7 +288,7 @@ public class Player : MonoBehaviour {
 				anim.SetTrigger ("AirAttack");
 		}
 	}
-	
+		}
 	}
 	
 	void Jump()
