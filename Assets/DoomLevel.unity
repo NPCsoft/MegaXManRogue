@@ -291,6 +291,7 @@ GameObject:
   - 114: {fileID: 562184582}
   - 50: {fileID: 562184581}
   - 61: {fileID: 562184580}
+  - 114: {fileID: 562184583}
   m_Layer: 9
   m_Name: Dooooom
   m_TagString: Enemy
@@ -333,7 +334,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -354,6 +355,30 @@ MonoBehaviour:
   maxHealth: 28
   hitstoKill: 28
   rehittimer: .300000012
+--- !u!114 &562184583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 562184578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f40e1ca333eb54eb329b53a4a850df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossHealthBar: {fileID: 2031853106}
+  refiretimer: 2
+  refiretimermax: 2
+  playerLocation: {fileID: 786232693}
+  doomSprite: {fileID: 1877612357}
+  doomPosition: {fileID: 562184579}
+  vertSpeed: 3
+  moveSpeed: 2.5
+  jumping: 0
+  falling: 0
+  moveLeft: 0
+  moveRight: 0
+  lastDirectionLeft: 0
 --- !u!1 &780517804
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSprite: {fileID: 1810334377}
+  currentboss: {fileID: 1877612355}
   speed: 3.5
   walkSpeed: 3.5
   dashSpeed: 8
@@ -1794,6 +1820,10 @@ Prefab:
       propertyPath: playerHealthBar
       value: 
       objectReference: {fileID: 1380201583}
+    - target: {fileID: 11400000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: currentboss
+      value: 
+      objectReference: {fileID: 1877612355}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
   m_RootGameObject: {fileID: 786232692}

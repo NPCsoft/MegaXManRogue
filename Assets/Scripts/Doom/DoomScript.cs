@@ -60,6 +60,17 @@ public class DoomScript : MonoBehaviour {
 
 	void PinkGround() 
 	{
+		falling = false;
+		moveRight = false;
+		moveLeft = false;
+		if (doomPosition.localPosition.x > playerLocation.localPosition.x)
+		{
+			doomSprite.localScale = new Vector3 (-1,1,1);
+		}
+		else
+		{
+			doomSprite.localScale = new Vector3 (1,1,1);
+		}
 		anim.Play ("PinkGround");
 		Invoke ("JumpToMid",1f);
 	}
@@ -87,10 +98,10 @@ public class DoomScript : MonoBehaviour {
 		moveLeft = false;
 		moveRight = false;
 		anim.Play ("AirPink");
-		Invoke ("ContinueFall",1f);
+		Invoke ("ContinueFallMid",1f);
 	}
 
-	void ContinueFall()
+	void ContinueFallMid()
 	{
 		falling = true;
 		if (lastDirectionLeft)
@@ -98,11 +109,14 @@ public class DoomScript : MonoBehaviour {
 		else
 			moveRight = true;
 
-		Invoke ("GroundBeam",1f);
+		Invoke ("BeamGround",1f);
 	}
 
-	void GroundBeam()
+	void BeamGround()
 	{
+		falling = false;
+		moveLeft = false;
+		moveRight = false;
 		if (doomPosition.localPosition.x > playerLocation.localPosition.x)
 		{
 			doomSprite.localScale = new Vector3 (-1,1,1);
@@ -111,5 +125,69 @@ public class DoomScript : MonoBehaviour {
 		{
 			doomSprite.localScale = new Vector3 (1,1,1);
 		}
+
+		anim.Play ("BeamGround");
+		Invoke ("JumpToEdge",1f);
 	}
+
+	void JumpToEdge()
+	{
+		if (lastDirectionLeft && doomSprite.localScale.x == -1)
+			anim.Play ("ForwardJump");
+		else if (lastDirectionLeft && doomSprite.localScale.x == 1)
+			anim.Play ("BackwardJump");
+		else if (!lastDirectionLeft && doomSprite.localScale.x == 1)
+			anim.Play ("ForwardJump");
+		else if (!lastDirectionLeft && doomSprite.localScale.x == -1)
+			anim.Play ("BackwardJump");
+
+		if (lastDirectionLeft)
+		{
+			moveLeft = true;
+			jumping = true;
+		}
+		else
+		{
+			moveRight = true;
+			jumping = true;
+		}
+
+		Invoke ("AirBeam",1f);
+	}
+
+	void AirBeam()
+	{
+		jumping = false;
+		moveRight = false;
+		moveLeft = false;
+		if (doomPosition.localPosition.x > playerLocation.localPosition.x)
+		{
+			doomSprite.localScale = new Vector3 (-1,1,1);
+		}
+		else
+		{
+			doomSprite.localScale = new Vector3 (1,1,1);
+		}
+		anim.Play ("AirBeam");
+		Invoke ("ContinueFallEdge",1f);
+	}
+
+	void ContinueFallEdge()
+	{
+		falling = true;
+		if (lastDirectionLeft)
+		{
+			moveLeft = true;
+			lastDirectionLeft = false;
+
+		}
+		else
+		{
+			moveRight = true;
+			lastDirectionLeft = true;
+
+		}
+		Invoke ("PinkGround",1f);
+	}
+
 }
