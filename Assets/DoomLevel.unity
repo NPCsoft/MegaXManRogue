@@ -306,7 +306,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 562184578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.14287519, y: -2.75062752, z: -1}
+  m_LocalPosition: {x: 5.33916855, y: -2.75062752, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1877612357}
@@ -372,8 +372,8 @@ MonoBehaviour:
   playerLocation: {fileID: 786232693}
   doomSprite: {fileID: 1877612357}
   doomPosition: {fileID: 562184579}
-  vertSpeed: 3
-  moveSpeed: 2.5
+  vertSpeed: 6
+  moveSpeed: 5.5
   jumping: 0
   falling: 0
   moveLeft: 0

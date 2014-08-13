@@ -89,7 +89,7 @@ public class DoomScript : MonoBehaviour {
 			moveRight = true;
 			lastDirectionLeft = false;
 		}
-		Invoke ("AirPink",1f);
+		Invoke ("AirPink",0.5f);
 	}
 
 	void AirPink()
@@ -109,7 +109,7 @@ public class DoomScript : MonoBehaviour {
 		else
 			moveRight = true;
 
-		Invoke ("BeamGround",1f);
+		Invoke ("BeamGround",0.5f);
 	}
 
 	void BeamGround()
@@ -152,7 +152,7 @@ public class DoomScript : MonoBehaviour {
 			jumping = true;
 		}
 
-		Invoke ("AirBeam",1f);
+		Invoke ("AirBeam",0.5f);
 	}
 
 	void AirBeam()
@@ -187,7 +187,7 @@ public class DoomScript : MonoBehaviour {
 			lastDirectionLeft = true;
 
 		}
-		Invoke ("PinkGround",1f);
+		Invoke ("PinkGround",0.5f);
 	}
 
 }
