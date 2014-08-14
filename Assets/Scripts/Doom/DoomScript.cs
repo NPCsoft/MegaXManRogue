@@ -7,8 +7,8 @@ public class DoomScript : MonoBehaviour {
 	public static Animator healthanim;
 	public static Animator anim;
 
-	public float refiretimer = 2f;
-	public float refiretimermax = 2f;
+	public static float refiretimer = 2f;
+	public static float refiretimermax = 2f;
 
 	public Transform playerLocation;
 	public Transform doomSprite;	
@@ -36,7 +36,6 @@ public class DoomScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
-
 //		if (jumping)
 //		{
 //			transform.Translate (Vector3.up * vertSpeed * Time.deltaTime);
