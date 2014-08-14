@@ -14,6 +14,7 @@ public class DoomScript : MonoBehaviour {
 	public Transform doomSprite;	
 	public Transform doomPosition;
 
+	public float JumpForce = 10f;
 	public float vertSpeed = 5f;
 	public float moveSpeed = 5f;
 	public bool jumping = false;
@@ -36,14 +37,19 @@ public class DoomScript : MonoBehaviour {
 	void Update () {
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
 
-		if (jumping)
-		{
-			transform.Translate (Vector3.up * vertSpeed * Time.deltaTime);
-		}	
-
+//		if (jumping)
+//		{
+//			transform.Translate (Vector3.up * vertSpeed * Time.deltaTime);
+//		}	
+//
 		if (falling)
 		{
-			transform.Translate (Vector3.up * -vertSpeed * Time.deltaTime);
+//			transform.Translate (Vector3.up * -vertSpeed * Time.deltaTime);
+			rigidbody2D.gravityScale = 1f;
+		}
+		else
+		{
+			rigidbody2D.gravityScale = 0f;
 		}
 
 		if (moveLeft)
@@ -77,7 +83,8 @@ public class DoomScript : MonoBehaviour {
 
 	void JumpToMid()
 	{
-		jumping = true;
+//		jumping = true;
+		rigidbody2D.AddForce (Vector2.up * JumpForce);
 		anim.Play ("ForwardJump");
 		if (doomPosition.localPosition.x > 0f)
 		{
@@ -94,7 +101,9 @@ public class DoomScript : MonoBehaviour {
 
 	void AirPink()
 	{
-		jumping = false;
+//		jumping = false;
+		rigidbody2D.velocity = Vector2.zero;
+
 		moveLeft = false;
 		moveRight = false;
 		anim.Play ("AirPink");
@@ -144,12 +153,14 @@ public class DoomScript : MonoBehaviour {
 		if (lastDirectionLeft)
 		{
 			moveLeft = true;
-			jumping = true;
+//			jumping = true;
+			rigidbody2D.AddForce (Vector2.up * JumpForce);
 		}
 		else
 		{
 			moveRight = true;
-			jumping = true;
+//			jumping = true;
+			rigidbody2D.AddForce (Vector2.up * JumpForce);
 		}
 
 		Invoke ("AirBeam",0.5f);
@@ -157,7 +168,9 @@ public class DoomScript : MonoBehaviour {
 
 	void AirBeam()
 	{
-		jumping = false;
+//		jumping = false;
+		rigidbody2D.velocity = Vector2.zero;
+
 		moveRight = false;
 		moveLeft = false;
 		if (doomPosition.localPosition.x > playerLocation.localPosition.x)
