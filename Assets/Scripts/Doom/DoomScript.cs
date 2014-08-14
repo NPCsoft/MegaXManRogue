@@ -63,7 +63,7 @@ public class DoomScript : MonoBehaviour {
 		}
 
 	}
-
+	//PINK GROUND REMOVED, JUST TURNS NOW
 	void PinkGround() 
 	{
 		falling = false;
@@ -77,7 +77,8 @@ public class DoomScript : MonoBehaviour {
 		{
 			doomSprite.localScale = new Vector3 (1,1,1);
 		}
-		anim.Play ("PinkGround");
+//		anim.Play ("PinkGround");
+		anim.Play ("Idle");
 		Invoke ("JumpToMid",1f);
 	}
 
@@ -103,7 +104,14 @@ public class DoomScript : MonoBehaviour {
 	{
 //		jumping = false;
 		rigidbody2D.velocity = Vector2.zero;
-
+		if (doomPosition.localPosition.x > playerLocation.localPosition.x)
+		{
+			doomSprite.localScale = new Vector3 (-1,1,1);
+		}
+		else
+		{
+			doomSprite.localScale = new Vector3 (1,1,1);
+		}
 		moveLeft = false;
 		moveRight = false;
 		anim.Play ("AirPink");
@@ -113,6 +121,7 @@ public class DoomScript : MonoBehaviour {
 	void ContinueFallMid()
 	{
 		falling = true;
+		anim.Play ("Falling");
 		if (lastDirectionLeft)
 			moveLeft = true;
 		else
@@ -165,14 +174,11 @@ public class DoomScript : MonoBehaviour {
 
 		Invoke ("AirBeam",0.5f);
 	}
-
+	//AIR BEAM REMOVED, DOES AIR PINK INSTEAD
 	void AirBeam()
 	{
 //		jumping = false;
 		rigidbody2D.velocity = Vector2.zero;
-
-		moveRight = false;
-		moveLeft = false;
 		if (doomPosition.localPosition.x > playerLocation.localPosition.x)
 		{
 			doomSprite.localScale = new Vector3 (-1,1,1);
@@ -181,13 +187,17 @@ public class DoomScript : MonoBehaviour {
 		{
 			doomSprite.localScale = new Vector3 (1,1,1);
 		}
-		anim.Play ("AirBeam");
+		moveLeft = false;
+		moveRight = false;
+		anim.Play ("AirPink");
 		Invoke ("ContinueFallEdge",1f);
 	}
 
 	void ContinueFallEdge()
 	{
 		falling = true;
+		anim.Play ("Falling");
+
 		if (lastDirectionLeft)
 		{
 			moveLeft = true;
