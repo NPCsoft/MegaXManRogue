@@ -960,6 +960,10 @@ Prefab:
       propertyPath: playerHealthBar
       value: 
       objectReference: {fileID: 233652616}
+    - target: {fileID: 11400000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: currentboss
+      value: 
+      objectReference: {fileID: 1423467560}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
   m_RootGameObject: {fileID: 1504552555}
@@ -1697,6 +1701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSprite: {fileID: 954410772}
+  currentboss: {fileID: 1423467560}
   speed: 3.5
   walkSpeed: 3.5
   dashSpeed: 8
@@ -1855,7 +1860,7 @@ GameObject:
   - 4: {fileID: 1608889362}
   m_Layer: 0
   m_Name: StageBounds
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
