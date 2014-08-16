@@ -2194,6 +2194,7 @@ MonoBehaviour:
   bossHealthBar: {fileID: 997336534}
   playerLocation: {fileID: 1504552556}
   venomSprite: {fileID: 1423467562}
+  JumpForce: 100
   crawlspeed: 4
   whalespeed: 9
 --- !u!1 &2018770383

@@ -10,7 +10,6 @@ public class VenomScript : MonoBehaviour {
 	public static float refiretimer = 2f;
 	public Transform venomSprite;	
 
-
 	public static bool crawling = false;
 	public static bool whaling = false;
 	public static bool canturn = true;
@@ -84,7 +83,7 @@ public class VenomScript : MonoBehaviour {
 	}
 
 	void Whale(){
-		anim.Play ("Whale");
+		anim.Play ("Crawl");
 		whaling = true;
 		Invoke ("WhaleBreak",1f);
 	}
