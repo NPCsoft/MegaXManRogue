@@ -19,3 +19,7 @@ EditorBuildSettings:
     path: Assets/MisterSinisterLevel.unity
   - enabled: 1
     path: Assets/VenomLevel.unity
+  - enabled: 1
+    path: Assets/Credits.unity
+  - enabled: 1
+    path: Assets/StageSelect.unity
