@@ -41,7 +41,7 @@ public class Sentinel : MonoBehaviour {
 
 	void ShowOff()
 	{
-		anim.Play ("ShowOff");
+		anim.Play ("Intro");
 		Invoke ("LowLaserAttack", 3f);
 	}
 
