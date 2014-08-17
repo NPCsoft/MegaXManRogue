@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyHealth : MonoBehaviour {
+public class EnemyHealth2 : MonoBehaviour {
 	public int maxHealth = 28;
 	public static int currentHealth = 28;
 	public int hitstoKill = 28;

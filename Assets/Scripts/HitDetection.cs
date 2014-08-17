@@ -20,5 +20,8 @@ public class HitDetection : MonoBehaviour {
 		if (enemy.tag == "Enemy"){
 			enemy.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
 		}
+		if (enemy.tag == "Cyclops"){
+			enemy.gameObject.GetComponent<EnemyHealth2>().TakeDamage(damage);
+		}
 	}
 }

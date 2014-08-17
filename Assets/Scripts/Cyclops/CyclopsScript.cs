@@ -7,12 +7,12 @@ public class CyclopsScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		healthanim = bossHealthBar.GetComponent<Animator>();
-		healthanim.SetFloat ("bossHealth",EnemyHealth.currentHealth);
+		healthanim.SetFloat ("bossHealth2",EnemyHealth2.currentHealth);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
+		healthanim.SetFloat("bossHealth2",EnemyHealth2.currentHealth);
 
 	}
 }
