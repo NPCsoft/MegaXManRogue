@@ -23,13 +23,13 @@ public class DamageDetection : MonoBehaviour {
 			{
 				Player.anim.Play("Death");
 				playerPlayer.GetComponent<Player>().enabled = false;
-				Invoke ("ReloadLevel", 2f);
+				Invoke ("ReloadLevel", 5f);
 			}
 			else
 			{
 				Player.anim.Play ("DeathRight");
 				playerPlayer.GetComponent<Player>().enabled = false;
-				Invoke ("ReloadLevel", 2f);
+				Invoke ("ReloadLevel", 5f);
 
 			}
 		}

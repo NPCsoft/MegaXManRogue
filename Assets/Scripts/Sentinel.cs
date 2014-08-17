@@ -11,6 +11,8 @@ public class Sentinel : MonoBehaviour {
 	public float dashspeed = 5f;
 	public bool dashing = false;
 	public bool dashingRight = true;
+	public AudioClip neutralize;
+	public AudioClip chargeup;
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +44,7 @@ public class Sentinel : MonoBehaviour {
 	void ShowOff()
 	{
 		anim.Play ("Intro");
+		audio.PlayOneShot (neutralize);
 		Invoke ("LowLaserAttack", 3f);
 	}
 
@@ -50,12 +53,14 @@ public class Sentinel : MonoBehaviour {
 		dashing = false;
 		ChangeDirection();
 		anim.Play ("LowLaserAttack");
+		audio.PlayOneShot (chargeup);
 		Invoke ("LaserAttack",4f);
 	}
 
 	void LaserAttack()
 	{
 		anim.Play("LaserAttack");
+		audio.PlayOneShot (chargeup);
 		Invoke ("Dash", 3f);
 	}
 

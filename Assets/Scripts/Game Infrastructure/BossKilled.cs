@@ -13,6 +13,21 @@ public class BossKilled : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	if (currentBoss == null && currentBoss2 == null)
+		{
 			PlayerPrefs.SetInt (stageName, 1);
+			if (stageName != "DoomLevel")
+				Invoke ("BackToStageSelect",5f);
+			else
+				Invoke ("WinScreen",5f);
+		}
+	}
+
+	void BackToStageSelect()
+	{
+		Application.LoadLevel ("StageSelect");
+	}
+	void WinScreen()
+	{
+		Application.LoadLevel ("WinScreen");
 	}
 }

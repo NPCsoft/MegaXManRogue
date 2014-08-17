@@ -336,7 +336,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4280000000
 --- !u!23 &737483123
 Renderer:
   m_ObjectHideFlags: 0
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: StageSelect
-  myMaterial: {fileID: 0}
+  myMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!23 &877537492
 Renderer:
   m_ObjectHideFlags: 0
@@ -540,7 +540,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4280000000
 --- !u!23 &979969323
 Renderer:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4280000000
 --- !u!23 &1044527719
 Renderer:
   m_ObjectHideFlags: 0
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Credits
-  myMaterial: {fileID: 0}
+  myMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!23 &1153477140
 Renderer:
   m_ObjectHideFlags: 0
@@ -771,7 +771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: IntroLevel
-  myMaterial: {fileID: 0}
+  myMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!23 &1207766381
 Renderer:
   m_ObjectHideFlags: 0
