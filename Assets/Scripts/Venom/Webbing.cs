@@ -27,7 +27,6 @@ public class Webbing : MonoBehaviour {
 			else
 				transform.Translate (Vector3.right * 15f * Time.deltaTime);	
 
-			transform.Translate (Vector3.up * -1f * Time.deltaTime);
 		}
 	}
 

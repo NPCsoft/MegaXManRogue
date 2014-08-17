@@ -828,7 +828,7 @@ Transform:
   m_PrefabInternal: {fileID: 857611737}
   m_GameObject: {fileID: 834139409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -.0221130848, z: 0}
   m_LocalScale: {x: .5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 954410772}
@@ -857,7 +857,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.12}
   m_Center: {x: 0, y: 0}
 --- !u!1 &835048592
 GameObject:
@@ -883,7 +883,7 @@ Transform:
   m_PrefabInternal: {fileID: 857611737}
   m_GameObject: {fileID: 835048592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .739554882, y: .25364542, z: 0}
+  m_LocalPosition: {x: .97542572, y: .371580809, z: 0}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 954410772}
@@ -926,7 +926,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.31651855
+      value: -1.71209955
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
       propertyPath: m_LocalPosition.z
@@ -964,6 +964,30 @@ Prefab:
       propertyPath: currentboss
       value: 
       objectReference: {fileID: 1423467560}
+    - target: {fileID: 400014, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.129999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .97542572
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .371580809
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.0221130848
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100002, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: m_Size.y
+      value: 1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: m_Size.y
+      value: 1.14999998
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
   m_RootGameObject: {fileID: 1504552555}
@@ -1665,7 +1689,7 @@ Transform:
   m_PrefabInternal: {fileID: 857611737}
   m_GameObject: {fileID: 1504552555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.76300001, y: -2.31651855, z: 0}
+  m_LocalPosition: {x: -5.76300001, y: -1.71209955, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1514740945}
@@ -1730,7 +1754,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .75, y: 1}
+  m_Size: {x: .75, y: 1.14999998}
   m_Center: {x: 0, y: 0}
 --- !u!1 &1514740944
 GameObject:
@@ -1754,7 +1778,7 @@ Transform:
   m_PrefabInternal: {fileID: 857611737}
   m_GameObject: {fileID: 1514740944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -.129999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1438899385}
@@ -2151,6 +2175,8 @@ MonoBehaviour:
   maxHealth: 28
   hitstoKill: 28
   rehittimer: .5
+  initialColor: {x: 1, y: 1, z: 1, w: 1}
+  flickerColor: {x: 1, y: .400000006, z: .400000006, w: 1}
 --- !u!61 &1874679745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2194,7 +2220,6 @@ MonoBehaviour:
   bossHealthBar: {fileID: 997336534}
   playerLocation: {fileID: 1504552556}
   venomSprite: {fileID: 1423467562}
-  JumpForce: 100
   crawlspeed: 4
   whalespeed: 9
 --- !u!1 &2018770383
