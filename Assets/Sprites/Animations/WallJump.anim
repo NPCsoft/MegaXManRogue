@@ -25,7 +25,7 @@ AnimationClip:
         value: {x: 0, y: 0, z: -1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 596246564
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: 
@@ -42,16 +42,35 @@ AnimationClip:
         value: {x: .5, y: .5, z: 1}
         inSlope: {x: 0, y: .5, z: 0}
         outSlope: {x: 0, y: .5, z: 0}
-        tangentMode: 1462661733
+        tangentMode: 1127117413
       - time: .75
         value: {x: .5, y: 1, z: 1}
         inSlope: {x: 0, y: 2, z: 0}
         outSlope: {x: 0, y: 2, z: 0}
-        tangentMode: 9066
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: DamageCollider
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1.08333337
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: jumpaudio
+    classID: 1
+    script: {fileID: 0}
   m_PPtrCurves:
   - curve:
     - time: 0
@@ -89,6 +108,12 @@ AnimationClip:
       attribute: 3
       script: {fileID: 0}
       classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4108869900
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
       customType: 0
       isPPtrCurve: 0
     - path: 0
@@ -260,6 +285,25 @@ AnimationClip:
     attribute: m_LocalScale.z
     path: DamageCollider
     classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1.08333337
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: jumpaudio
+    classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_Events: []

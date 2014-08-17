@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class GroundChecker : MonoBehaviour {
-
+	public AudioClip landing;
 	public int _count;
 
 	// Use this for initialization
@@ -18,13 +18,18 @@ public class GroundChecker : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D other)
 	{
 		if (other.gameObject.tag == "Wall")
+		{	
+			audio.PlayOneShot (landing);
 			++_count;
+		}
 	}
 	
 	void OnTriggerStay2D(Collider2D other)
 	{
 		if (other.gameObject.tag == "Wall")
+		{
 			Player.Grounded = true;
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D other)
@@ -36,6 +41,7 @@ public class GroundChecker : MonoBehaviour {
 			{
 				Player.Grounded = false;
 				Player.dashTimer = 1f;
+				audio.volume = 0.05f;
 			}
 		}
 	}
