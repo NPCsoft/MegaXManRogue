@@ -23,13 +23,24 @@ public class DamageDetection : MonoBehaviour {
 			{
 				Player.anim.Play("Death");
 				playerPlayer.GetComponent<Player>().enabled = false;
+				Invoke ("ReloadLevel", 2f);
 			}
 			else
 			{
 				Player.anim.Play ("DeathRight");
 				playerPlayer.GetComponent<Player>().enabled = false;
+				Invoke ("ReloadLevel", 2f);
+
 			}
 		}
+	}
+
+	void ReloadLevel()
+	{
+		if (Application.loadedLevelName != "IntroLevel")
+			Application.LoadLevel("StageSelect");
+		else
+			Application.LoadLevel("MainMenu");
 	}
 
 	//used to detect when you take damage
