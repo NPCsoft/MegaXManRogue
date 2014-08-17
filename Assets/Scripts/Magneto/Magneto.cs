@@ -15,12 +15,16 @@ public class Magneto : MonoBehaviour {
 	public float vertSpeed = 3f;
 	public float horzSpeed = 3f;
 	public bool whichWay = true;
+
+	public AudioClip supreme;
+	public AudioClip chuckle;
 	// Use this for initialization
 	void Start () {
 		healthanim = bossHealthBar.GetComponent<Animator>();
 		healthanim.SetFloat ("bossHealth",EnemyHealth.currentHealth);
 		Invoke ("GetAirborn",3f);
 		anim = magnetoSprite.GetComponent<Animator>();
+		audio.PlayOneShot (supreme);
 
 	}
 	
@@ -83,6 +87,8 @@ public class Magneto : MonoBehaviour {
 	}
 
 	void GroundShock(){
+		audio.PlayOneShot (chuckle);
+
 		anim.Play ("GroundShock");
 		Invoke ("GetAirbornToOscilate",3f);
 		if (!whichWay){

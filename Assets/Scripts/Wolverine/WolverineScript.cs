@@ -19,6 +19,9 @@ public class WolverineScript : MonoBehaviour {
 	public bool drillup = false;
 	public bool drilldown = false;
 	public bool upordown = false;
+	public AudioClip bub;
+	public AudioClip drillclawvoice;
+	public AudioClip drillclawsound;
 
 	// Use this for initialization
 	void Start () 
@@ -26,13 +29,15 @@ public class WolverineScript : MonoBehaviour {
 		healthanim = bossHealthBar.GetComponent<Animator>();
 		healthanim.SetFloat ("bossHealth",EnemyHealth.currentHealth);
 		anim = wolverineSprite.GetComponent<Animator>();
+		audio.PlayOneShot (bub);
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
-	
+	if (!anim.GetCurrentAnimatorStateInfo(0).IsName ("Intro"))
+		{
 		if (wallhit)
 		{
 			drillstraight = false;
@@ -85,11 +90,13 @@ public class WolverineScript : MonoBehaviour {
 				transform.Translate (new Vector3 (1 * -drillspeedx, 1 * -drillspeedy,0) * Time.deltaTime);
 			
 		}
+		}
 	}
 
 	void CrouchtoDrillStraightStarting()
 	{
 		anim.Play ("Crouch");
+		audio.PlayOneShot(drillclawvoice);
 		Invoke ("DrillStraightStarting",0.2f);
 	}
 
@@ -107,6 +114,7 @@ public class WolverineScript : MonoBehaviour {
 	void DrillStraightStarting()
 	{
 		anim.Play ("DrillClawStraight");
+		audio.PlayOneShot(drillclawsound);
 		drillstraight = true;
 	}
 
@@ -118,6 +126,8 @@ public class WolverineScript : MonoBehaviour {
 			wolverineSprite.localScale = new Vector3 (1,1,1);
 		anim.Play ("DrillClawStraight");
 		drillstraight = true;
+		audio.PlayOneShot(drillclawsound);
+
 	}
 	
 
@@ -133,6 +143,8 @@ public class WolverineScript : MonoBehaviour {
 				wolverineSprite.localScale = new Vector3 (1,1,1);
 			anim.Play ("DrillClawUp");
 			drillup = true;
+			audio.PlayOneShot(drillclawsound);
+
 		}
 		else
 		{
@@ -152,6 +164,8 @@ public class WolverineScript : MonoBehaviour {
 		else
 			wolverineSprite.localScale = new Vector3 (1,1,1);
 		anim.Play ("DrillClawDown");
+				audio.PlayOneShot(drillclawsound);
+
 		drilldown = true;
 		}
 		else

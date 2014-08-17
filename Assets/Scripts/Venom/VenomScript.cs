@@ -10,6 +10,10 @@ public class VenomScript : MonoBehaviour {
 	public static float refiretimer = 2f;
 	public Transform venomSprite;	
 
+	public AudioClip web;
+	public AudioClip bite;
+	public AudioClip shadow;
+
 	public static bool crawling = false;
 	public static bool whaling = false;
 	public static bool canturn = true;
@@ -57,6 +61,7 @@ public class VenomScript : MonoBehaviour {
 	}
 
 	void WebAttack (){
+		audio.PlayOneShot (web);
 		anim.Play ("Webshot");
 		Invoke ("Crawl", 2f);
 	}
@@ -71,12 +76,15 @@ public class VenomScript : MonoBehaviour {
 	}
 
 	void Licking(){
+		audio.PlayOneShot (bite);
 		crawling = false;
 		anim.Play ("Lick");
 		Invoke ("Whale",2f);
 	}
 
 	void BigBite(){
+		audio.PlayOneShot (bite);
+
 		crawling = false;
 		anim.Play ("BigBite");
 		Invoke ("Whale",2f);
@@ -105,6 +113,7 @@ public class VenomScript : MonoBehaviour {
 
 	void ShadowStrike(){
 
+		audio.PlayOneShot (shadow);
 
 		anim.Play ("ShadowStrike");
 		Invoke ("Taunt",4f);
