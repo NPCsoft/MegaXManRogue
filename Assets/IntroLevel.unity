@@ -162,7 +162,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 928825186}
-  m_RootOrder: 4
+  m_RootOrder: 0
 --- !u!114 &104065474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +179,7 @@ MonoBehaviour:
   hitstoKill: 1
   rehittimer: .300000012
   initialColor: {x: 1, y: 1, z: 1, w: 1}
+  flickerColor: {x: 1, y: .400000006, z: .400000006, w: 1}
 --- !u!1001 &126605300
 Prefab:
   m_ObjectHideFlags: 0
@@ -238,6 +239,7 @@ GameObject:
   - 61: {fileID: 137148913}
   - 114: {fileID: 137148912}
   - 50: {fileID: 137148911}
+  - 114: {fileID: 137148914}
   m_Layer: 8
   m_Name: Jumpnshootman
   m_TagString: Player
@@ -289,6 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSprite: {fileID: 674107516}
   currentboss: {fileID: 1194007974}
+  cyclops: {fileID: 0}
   speed: 3.5
   walkSpeed: 3.5
   dashSpeed: 8
@@ -317,8 +320,22 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .75, y: 1}
+  m_Size: {x: .75, y: 1.14999998}
   m_Center: {x: 0, y: 0}
+--- !u!114 &137148914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400014, guid: 3409ac85605da1d4f9b4817aedc56727,
+    type: 2}
+  m_PrefabInternal: {fileID: 1905883857}
+  m_GameObject: {fileID: 137148909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0f1d398bbde4d409f7192f3a4d5f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentBoss: {fileID: 1140891468}
+  currentBoss2: {fileID: 0}
 --- !u!1001 &147081394
 Prefab:
   m_ObjectHideFlags: 0
@@ -395,7 +412,7 @@ Transform:
   m_PrefabInternal: {fileID: 1905883857}
   m_GameObject: {fileID: 196794248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -.0221130848, z: 0}
   m_LocalScale: {x: .5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 674107516}
@@ -424,7 +441,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.12}
   m_Center: {x: 0, y: 0}
 --- !u!1001 &221640004
 Prefab:
@@ -650,7 +667,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 928825186}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!114 &350582513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,6 +684,7 @@ MonoBehaviour:
   hitstoKill: 28
   rehittimer: .300000012
   initialColor: {x: 1, y: 1, z: 1, w: 1}
+  flickerColor: {x: 1, y: .400000006, z: .400000006, w: 1}
 --- !u!1 &353854324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,11 +1314,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 104065473}
   - {fileID: 940504283}
   - {fileID: 1331813568}
   - {fileID: 1653833994}
   - {fileID: 350582512}
-  - {fileID: 104065473}
   m_Father: {fileID: 0}
   m_RootOrder: 7
 --- !u!1 &940504278
@@ -1391,7 +1409,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 928825186}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &940504284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1408,6 +1426,7 @@ MonoBehaviour:
   hitstoKill: 28
   rehittimer: .300000012
   initialColor: {x: 1, y: 1, z: 1, w: 1}
+  flickerColor: {x: 1, y: .400000006, z: .400000006, w: 1}
 --- !u!1001 &957234914
 Prefab:
   m_ObjectHideFlags: 0
@@ -1975,6 +1994,7 @@ MonoBehaviour:
   hitstoKill: 28
   rehittimer: .300000012
   initialColor: {x: 1, y: 1, z: 1, w: 1}
+  flickerColor: {x: 1, y: .400000006, z: .400000006, w: 1}
 --- !u!61 &1140891472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2661,7 +2681,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 928825186}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!114 &1331813569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2678,6 +2698,7 @@ MonoBehaviour:
   hitstoKill: 28
   rehittimer: .300000012
   initialColor: {x: 1, y: 1, z: 1, w: 1}
+  flickerColor: {x: 1, y: .400000006, z: .400000006, w: 1}
 --- !u!1 &1348066651
 GameObject:
   m_ObjectHideFlags: 0
@@ -3270,7 +3291,7 @@ Transform:
   m_PrefabInternal: {fileID: 1905883857}
   m_GameObject: {fileID: 1601813124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .739554882, y: .25364542, z: 0}
+  m_LocalPosition: {x: .97542572, y: .371580809, z: 0}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 674107516}
@@ -3440,7 +3461,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 928825186}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &1653833995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3457,6 +3478,7 @@ MonoBehaviour:
   hitstoKill: 28
   rehittimer: .300000012
   initialColor: {x: 1, y: 1, z: 1, w: 1}
+  flickerColor: {x: 1, y: .400000006, z: .400000006, w: 1}
 --- !u!1001 &1697019326
 Prefab:
   m_ObjectHideFlags: 0
@@ -3615,7 +3637,7 @@ Transform:
   m_PrefabInternal: {fileID: 1905883857}
   m_GameObject: {fileID: 1780900865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -.129999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473226808}
@@ -3898,6 +3920,10 @@ Prefab:
       propertyPath: currentboss
       value: 
       objectReference: {fileID: 1194007974}
+    - target: {fileID: 11400014, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: currentBoss
+      value: 
+      objectReference: {fileID: 1140891468}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
   m_RootGameObject: {fileID: 137148909}

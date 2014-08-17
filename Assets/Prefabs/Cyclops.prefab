@@ -31,7 +31,7 @@ GameObject:
   - 114: {fileID: 11400006}
   m_Layer: 9
   m_Name: Cyclops
-  m_TagString: Enemy
+  m_TagString: Cyclops
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,12 +255,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c78ff8ee37a53744861436fe9744815, type: 3}
+  m_Script: {fileID: 11500000, guid: 027791f1352c0294e90e25411b7b69a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 28
   hitstoKill: 28
   rehittimer: .300000012
+  initialColor: {x: 1, y: .5, z: .5, w: 1}
+  flickerColor: {x: 1, y: 1, z: 1, w: 1}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -324,7 +326,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 6e18c8f66c4c0944a87a2af50234655e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: .494117647, b: .505882382, a: 1}
 --- !u!212 &21200002
 SpriteRenderer:
   m_ObjectHideFlags: 1

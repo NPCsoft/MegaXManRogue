@@ -37,6 +37,8 @@ public class DamageDetection : MonoBehaviour {
 
 	void ReloadLevel()
 	{
+		currentHealth = 28f;
+
 		if (Application.loadedLevelName != "IntroLevel")
 			Application.LoadLevel("StageSelect");
 		else

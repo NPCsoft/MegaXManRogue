@@ -539,7 +539,7 @@ Transform:
   m_PrefabInternal: {fileID: 812213927}
   m_GameObject: {fileID: 355038353}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -.0221130848, z: 0}
   m_LocalScale: {x: .5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 85159249}
@@ -568,7 +568,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.12}
   m_Center: {x: 0, y: 0}
 --- !u!1 &412384495
 GameObject:
@@ -999,7 +999,7 @@ Transform:
   m_PrefabInternal: {fileID: 812213927}
   m_GameObject: {fileID: 760783056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -.129999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 745104426}
@@ -1020,7 +1020,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.44322634
+      value: -2.29322648
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1058,6 +1058,10 @@ Prefab:
       propertyPath: currentboss
       value: 
       objectReference: {fileID: 1282115073}
+    - target: {fileID: 11400014, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: currentBoss
+      value: 
+      objectReference: {fileID: 2131577854}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
   m_RootGameObject: {fileID: 1261363790}
@@ -1087,7 +1091,7 @@ Transform:
   m_PrefabInternal: {fileID: 812213927}
   m_GameObject: {fileID: 859775498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .739554882, y: .25364542, z: 0}
+  m_LocalPosition: {x: .97542572, y: .371580809, z: 0}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 85159249}
@@ -1595,6 +1599,7 @@ GameObject:
   - 61: {fileID: 1261363793}
   - 114: {fileID: 1261363792}
   - 50: {fileID: 1261363791}
+  - 114: {fileID: 1261363795}
   m_Layer: 8
   m_Name: Jumpnshootman
   m_TagString: Player
@@ -1632,6 +1637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSprite: {fileID: 85159249}
   currentboss: {fileID: 1282115073}
+  cyclops: {fileID: 0}
   speed: 3.5
   walkSpeed: 3.5
   dashSpeed: 8
@@ -1660,7 +1666,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .75, y: 1}
+  m_Size: {x: .75, y: 1.14999998}
   m_Center: {x: 0, y: 0}
 --- !u!4 &1261363794
 Transform:
@@ -1669,13 +1675,27 @@ Transform:
   m_PrefabInternal: {fileID: 812213927}
   m_GameObject: {fileID: 1261363790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.56127644, y: -2.44322634, z: 0}
+  m_LocalPosition: {x: 1.56127644, y: -2.29322648, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 760783057}
   - {fileID: 85159249}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1261363795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400014, guid: 3409ac85605da1d4f9b4817aedc56727,
+    type: 2}
+  m_PrefabInternal: {fileID: 812213927}
+  m_GameObject: {fileID: 1261363790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0f1d398bbde4d409f7192f3a4d5f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentBoss: {fileID: 2131577854}
+  currentBoss2: {fileID: 0}
 --- !u!1 &1282115071
 GameObject:
   m_ObjectHideFlags: 0
@@ -3130,6 +3150,8 @@ MonoBehaviour:
   maxHealth: 28
   hitstoKill: 28
   rehittimer: .5
+  initialColor: {x: 1, y: 1, z: 1, w: 1}
+  flickerColor: {x: 1, y: .400000006, z: .400000006, w: 1}
 --- !u!114 &2131577861
 MonoBehaviour:
   m_ObjectHideFlags: 0

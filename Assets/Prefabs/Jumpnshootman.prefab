@@ -11,6 +11,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
+  - 114: {fileID: 11400014}
   m_Layer: 8
   m_Name: Jumpnshootman
   m_TagString: Player
@@ -434,6 +435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSprite: {fileID: 400008}
   currentboss: {fileID: 0}
+  cyclops: {fileID: 0}
   speed: 3.5
   walkSpeed: 3.5
   dashSpeed: 8
@@ -526,6 +528,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0f1d398bbde4d409f7192f3a4d5f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageBoss: Venom
+  currentBoss: {fileID: 0}
+  currentBoss2: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
