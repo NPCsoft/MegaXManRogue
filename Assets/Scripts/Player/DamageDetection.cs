@@ -101,7 +101,7 @@ public class DamageDetection : MonoBehaviour {
 					anim.SetFloat("playerHealth" , currentHealth);
 				}
 			}
-			else if (enemy.gameObject.name == "SmashParticles(Clone)" || enemy.gameObject.name == "SmashParticlesEmpty(Clone")
+			else if (enemy.gameObject.name == "SmashParticles(Clone)" || enemy.gameObject.name == "SmashParticlesEmpty(Clone)")
 			{
 				if (currentHealth <= 8f)
 				{
