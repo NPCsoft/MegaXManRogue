@@ -133,6 +133,7 @@ public class DamageDetection : MonoBehaviour {
 					anim.SetFloat("playerHealth" , currentHealth);
 				}
 			}
+
 			else if (enemy.gameObject.name == "WebProjectile(Clone)")
 			{
 				if (currentHealth <= 1f)
@@ -152,6 +153,41 @@ public class DamageDetection : MonoBehaviour {
 					Destroy (enemy.gameObject,0.3f);
 				}
 			}
+
+			else if (enemy.gameObject.name == "DrillClaw")
+			{
+				if (currentHealth <= 6f)
+				{
+					currentHealth = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+				else
+				{
+					Player.anim.SetTrigger("Hurt");
+					currentHealth -= 6f;
+					Player.hitstuntimer = 0f;
+					Player.iframetimer = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+			}
+
+			else if (enemy.gameObject.name == "OpticBlast(Clone)")
+			{
+				if (currentHealth <= 4f)
+				{
+					currentHealth = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+				else
+				{
+					Player.anim.SetTrigger("Hurt");
+					currentHealth -= 4f;
+					Player.hitstuntimer = 0f;
+					Player.iframetimer = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+			}
+
 				else
 				{			
 				if (currentHealth <= 2f)

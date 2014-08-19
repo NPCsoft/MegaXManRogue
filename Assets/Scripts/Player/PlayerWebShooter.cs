@@ -14,7 +14,7 @@ public class PlayerWebShooter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Player.Laserrefiretimer > 0.5f)
+		if (Player.Laserrefiretimer > 0.5f && PlayerPrefs.GetInt ("VenomLevel") == 1)
 			WebSpawn();
 		
 	}
