@@ -24,7 +24,7 @@ public class EnemyHealth2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (currentHealth <= 0)
-			Destroy (gameObject, 0f);
+			Destroy (gameObject, 0.1f);
 		rehittimer += Time.deltaTime;
 
 	}

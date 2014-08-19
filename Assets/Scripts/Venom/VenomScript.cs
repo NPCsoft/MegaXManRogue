@@ -9,6 +9,7 @@ public class VenomScript : MonoBehaviour {
 	public Transform playerLocation;
 	public static float refiretimer = 2f;
 	public Transform venomSprite;	
+	public Transform tauntSprite;
 
 	public AudioClip web;
 	public AudioClip bite;
@@ -33,6 +34,17 @@ public class VenomScript : MonoBehaviour {
 	void Update () {
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
 		refiretimer += Time.deltaTime;
+
+		if (venomSprite.localScale.x == 1)
+		{
+			tauntSprite.localScale = new Vector3 (-1,1,1);
+			tauntSprite.localPosition =  new Vector3 (0.78f,0,1);
+		}
+		if (venomSprite.localScale.x == -1)
+		{
+			tauntSprite.localScale =  new Vector3 (1,1,1);
+			tauntSprite.localPosition = new Vector3  (0.78f,0,1);
+		}
 
 		if (crawling && venomSprite.localScale.x == -1)
 			transform.Translate (Vector3.right * -crawlspeed * Time.deltaTime);
