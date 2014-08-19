@@ -128,11 +128,13 @@ public class Player : MonoBehaviour {
 		{
 			dashTimer = 1f;
 			iframetimer = 0f;
-			if (lastDirectionRight)
-				transform.Translate(Vector2.right * -3 * Time.deltaTime);
-			else
-				transform.Translate(Vector2.right * 3 * Time.deltaTime);
-
+			if (!WallLeft)
+			{
+				if (lastDirectionRight)
+					transform.Translate(Vector2.right * -3 * Time.deltaTime);
+				else
+					transform.Translate(Vector2.right * 3 * Time.deltaTime);
+			}
 		}
 
 		if (wallslideDelay > 0.1f)
