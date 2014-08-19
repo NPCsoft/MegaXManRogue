@@ -157,7 +157,7 @@ GameObject:
   - 114: {fileID: 11400016}
   m_Layer: 8
   m_Name: hurtaudio
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,7 +173,7 @@ GameObject:
   - 82: {fileID: 8200002}
   m_Layer: 8
   m_Name: deathaudio
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189,7 +189,7 @@ GameObject:
   - 82: {fileID: 8200008}
   m_Layer: 8
   m_Name: comboaudio3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +205,7 @@ GameObject:
   - 82: {fileID: 8200004}
   m_Layer: 8
   m_Name: comboaudio2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,7 +221,7 @@ GameObject:
   - 82: {fileID: 8200006}
   m_Layer: 8
   m_Name: comboaudio1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,7 +237,23 @@ GameObject:
   - 82: {fileID: 8200012}
   m_Layer: 8
   m_Name: caughtyaaudio
-  m_TagString: Untagged
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &100028
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400028}
+  - 114: {fileID: 11400018}
+  m_Layer: 8
+  m_Name: ANGLELASERSPAWNER
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,7 +265,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.63360548, y: -2.30062771, z: 0}
+  m_LocalPosition: {x: 1.56127644, y: -2.29322648, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 400014}
@@ -310,6 +326,7 @@ Transform:
   - {fileID: 400018}
   - {fileID: 400016}
   - {fileID: 400026}
+  - {fileID: 400028}
   m_Father: {fileID: 400000}
   m_RootOrder: 1
 --- !u!4 &400010
@@ -423,6 +440,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400008}
   m_RootOrder: 7
+--- !u!4 &400028
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.13230336, y: .872855961, z: 0}
+  m_LocalScale: {x: -.5, y: .5, z: .5}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 8
 --- !u!23 &2300000
 Renderer:
   m_ObjectHideFlags: 1
@@ -1197,6 +1226,20 @@ MonoBehaviour:
   hurt1: {fileID: 8300000, guid: e836f457168f42a4b9eea257788388f1, type: 3}
   hurt2: {fileID: 8300000, guid: db9cb60b90b741248bae462c32256b92, type: 3}
   hurtnum: 0
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97e335deaa945545ac86f0c707c2d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  here: {fileID: 400028}
+  spriteScale: {fileID: 400008}
+  PlayerAngleLaser: {fileID: 100000, guid: c4d5172bd0b891840986c8e045d5b93d, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

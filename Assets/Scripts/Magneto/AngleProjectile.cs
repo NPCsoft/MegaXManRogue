@@ -10,7 +10,7 @@ public class AngleProjectile : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (gameObject.transform.localScale.x == -1)
+		if (gameObject.transform.localScale.x < 0f)
 			transform.Translate (new Vector3 (-5,-5,0) * Time.deltaTime);
 		else
 			transform.Translate (new Vector3 (5,-5,0) * Time.deltaTime);

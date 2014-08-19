@@ -35,7 +35,12 @@ public class Player : MonoBehaviour {
 	public bool wallSlide = true;
 	public static Animator anim;
 	public SpriteRenderer mysprite;
-	
+
+	//Weapons stuff
+	public static float Laserrefiretimer = 0.5f;
+	//Juggernaut invulnerability uses iframetimer and/or GameObject DamageDetector listed above ^^^
+
+
 	void Start () {
 		anim = playerSprite.GetComponent<Animator>();
 	}
@@ -56,6 +61,8 @@ public class Player : MonoBehaviour {
 		iframetimer += Time.deltaTime;
 		//flashtimer flashes during iframes
 		flashtimer += Time.deltaTime;
+		//laserrefiretime for magneto weapon
+		Laserrefiretimer += Time.deltaTime;
 
 		mysprite = GetComponentInChildren<SpriteRenderer>();
 
@@ -85,6 +92,10 @@ public class Player : MonoBehaviour {
 //			anim.SetTrigger("Hurt");
 //			hitstuntimer = 0f;
 //		}
+
+		if (isDashing && Grounded && PlayerPrefs.GetInt ("JuggernautLevel") == 1)
+			iframetimer = 1.4f;
+
 
 
 		float move = Input.GetAxis ("Horizontal");
