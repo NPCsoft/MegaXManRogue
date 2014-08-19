@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HitDetection : MonoBehaviour {
 
-	public int damage = 2;
+	public int damage = 1;
 	// Use this for initialization
 	void Start () {
 	
@@ -19,7 +19,9 @@ public class HitDetection : MonoBehaviour {
 	{
 		if (enemy.tag == "Enemy"){
 			if (gameObject.name == "PlayerAngleLaser(Clone)" && enemy.gameObject.name == "Juggernaut")
-				enemy.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage * 2);
+				enemy.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage * 3);
+			else if (gameObject.name == "PlayerWeb(Clone)" && enemy.gameObject.name == "Magneto")
+				enemy.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage * 4);
 			else
 				enemy.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
 		}
