@@ -85,7 +85,7 @@ GameObject:
   - 23: {fileID: 228031701}
   - 102: {fileID: 228031700}
   m_Layer: 0
-  m_Name: New Text
+  m_Name: Version Numba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
