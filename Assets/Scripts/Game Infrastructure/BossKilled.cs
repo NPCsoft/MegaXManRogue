@@ -24,6 +24,7 @@ public class BossKilled : MonoBehaviour {
 
 	void BackToStageSelect()
 	{
+		DamageDetection.currentHealth = 28;
 		Application.LoadLevel ("StageSelect");
 	}
 	void WinScreen()

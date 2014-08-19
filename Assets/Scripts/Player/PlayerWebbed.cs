@@ -28,7 +28,7 @@ public class PlayerWebbed : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D enemy)
 	{
-		if (enemy.tag == "Enemy")
+		if (enemy.tag == "Enemy" || enemy.tag == "Cyclops")
 		{
 			anim.SetTrigger ("webhit");
 			didHit = true;
