@@ -452,7 +452,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 358276026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.335289657, y: -.670579433, z: 0}
+  m_LocalPosition: {x: -.335289657, y: -.670579433, z: -.839999974}
   m_LocalScale: {x: .25, y: -.25, z: 1}
   m_Children: []
   m_Father: {fileID: 829682894}
@@ -738,6 +738,7 @@ MonoBehaviour:
   levelName: MisterSinisterLevel
   levelName2: DoomLevel
   mistertexture: {fileID: 2800000, guid: d1bd1245cb09992408627f5cc938963f, type: 3}
+  questionmark: {fileID: 358276026}
 --- !u!82 &829682897
 AudioSource:
   m_ObjectHideFlags: 0

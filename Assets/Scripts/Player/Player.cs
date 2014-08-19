@@ -128,6 +128,8 @@ public class Player : MonoBehaviour {
 		{
 			dashTimer = 1f;
 			iframetimer = 0f;
+
+			/// if !WallLeft is needed to prevent wall walking bug
 			if (!WallLeft)
 			{
 				if (lastDirectionRight)
