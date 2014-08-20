@@ -4,6 +4,7 @@ using System.Collections;
 public class BossKilled : MonoBehaviour {
 	// Use this for initialization
 	private string stageName;
+	private float delay = 0f;
 	public GameObject currentBoss;
 	public GameObject currentBoss2;
 	void Start () {
@@ -14,21 +15,59 @@ public class BossKilled : MonoBehaviour {
 	void Update () {
 	if (currentBoss == null && currentBoss2 == null)
 		{
-			PlayerPrefs.SetInt (stageName, 1);
-			if (stageName != "DoomLevel")
-				Invoke ("BackToStageSelect",5f);
-			else
-				Invoke ("WinScreen",5f);
+			if (delay > 7f)
+			{
+				delay = 0f;
+				if (PlayerPrefs.GetInt(stageName) != 1)
+				{
+					if (stageName == "MagnetoLevel")
+						Invoke ("GetMag",5f);
+					else if (stageName == "JuggernautLevel")
+						Invoke ("GetJug",5f);
+					else if (stageName == "VenomLevel")
+						Invoke ("GetVen",5f);
+					else if (stageName == "DoomLevel")
+						Invoke ("WinScreen",5f);
+					else
+						Invoke ("BackToStageSelect",5f);
+				}
+				else
+					Invoke ("BackToStageSelect",5f);
+			}
 		}
 	}
 
 	void BackToStageSelect()
 	{
 		DamageDetection.currentHealth = 28;
+		PlayerPrefs.SetInt (stageName, 1);
 		Application.LoadLevel ("StageSelect");
 	}
+
+	void GetMag()
+	{
+		DamageDetection.currentHealth = 28;
+		PlayerPrefs.SetInt (stageName, 1);
+		Application.LoadLevel ("GetMagneto");
+	}
+
+	void GetJug()
+	{
+		DamageDetection.currentHealth = 28;
+		PlayerPrefs.SetInt (stageName, 1);
+		Application.LoadLevel ("GetJuggernaut");
+	}
+
+	void GetVen()
+	{
+		DamageDetection.currentHealth = 28;
+		PlayerPrefs.SetInt (stageName, 1);
+		Application.LoadLevel ("GetVenom");
+	}
+
 	void WinScreen()
 	{
+		PlayerPrefs.SetInt (stageName, 1);
 		Application.LoadLevel ("WinScreen");
 	}
 }
