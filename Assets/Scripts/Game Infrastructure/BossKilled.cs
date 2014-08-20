@@ -13,6 +13,8 @@ public class BossKilled : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		delay += Time.deltaTime;
+
 	if (currentBoss == null && currentBoss2 == null)
 		{
 			if (delay > 7f)
