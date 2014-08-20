@@ -74,6 +74,49 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &16342010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100028, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+  m_PrefabInternal: {fileID: 1652120369}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 16342011}
+  - 114: {fileID: 16342012}
+  m_Layer: 8
+  m_Name: ANGLELASERSPAWNER
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &16342011
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400028, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+  m_PrefabInternal: {fileID: 1652120369}
+  m_GameObject: {fileID: 16342010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.13230336, y: .872855961, z: 0}
+  m_LocalScale: {x: -.5, y: .5, z: .5}
+  m_Children: []
+  m_Father: {fileID: 1810334377}
+  m_RootOrder: 9
+--- !u!114 &16342012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400018, guid: 3409ac85605da1d4f9b4817aedc56727,
+    type: 2}
+  m_PrefabInternal: {fileID: 1652120369}
+  m_GameObject: {fileID: 16342010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97e335deaa945545ac86f0c707c2d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  here: {fileID: 16342011}
+  spriteScale: {fileID: 1810334377}
+  PlayerAngleLaser: {fileID: 100000, guid: c4d5172bd0b891840986c8e045d5b93d, type: 2}
 --- !u!1 &81020105
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,6 +322,49 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1242619928}
   m_GameObject: {fileID: 311167593}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &330349782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100030, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+  m_PrefabInternal: {fileID: 1652120369}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 330349783}
+  - 114: {fileID: 330349784}
+  m_Layer: 9
+  m_Name: WebAttackSpawner
+  m_TagString: EnemyAttack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &330349783
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400030, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+  m_PrefabInternal: {fileID: 1652120369}
+  m_GameObject: {fileID: 330349782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .549407721, y: .859896243, z: .5}
+  m_LocalScale: {x: -.5, y: .5, z: .5}
+  m_Children: []
+  m_Father: {fileID: 1810334377}
+  m_RootOrder: 10
+--- !u!114 &330349784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400020, guid: 3409ac85605da1d4f9b4817aedc56727,
+    type: 2}
+  m_PrefabInternal: {fileID: 1652120369}
+  m_GameObject: {fileID: 330349782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0683f2e63ebc76f45ae3e385914288b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  here: {fileID: 330349783}
+  spriteScale: {fileID: 1810334377}
+  PlayerWebShot: {fileID: 100000, guid: b3ff92f590ed3044c8f96b5a56893277, type: 2}
 --- !u!1 &471529782
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,8 +652,8 @@ Transform:
   m_PrefabInternal: {fileID: 1652120369}
   m_GameObject: {fileID: 780517804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .449999809, y: .024443984, z: 0}
-  m_LocalScale: {x: .100000001, y: .899999976, z: 1}
+  m_LocalPosition: {x: .5, y: .127687097, z: 0}
+  m_LocalScale: {x: .100000001, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 81092259}
   m_RootOrder: 1
@@ -745,7 +831,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -804,7 +890,7 @@ GameObject:
   - 82: {fileID: 795820414}
   m_Layer: 8
   m_Name: comboaudio2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1319,7 +1405,7 @@ GameObject:
   - 82: {fileID: 1311338644}
   m_Layer: 8
   m_Name: caughtyaaudio
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1820,7 +1906,7 @@ GameObject:
   - 82: {fileID: 1541546649}
   m_Layer: 8
   m_Name: deathaudio
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2006,8 +2092,8 @@ Transform:
   m_PrefabInternal: {fileID: 1652120369}
   m_GameObject: {fileID: 1559330180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.449999809, y: .024443984, z: 0}
-  m_LocalScale: {x: .100000001, y: .899999976, z: 1}
+  m_LocalPosition: {x: -.5, y: .127687097, z: 0}
+  m_LocalScale: {x: .100000001, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 81092259}
   m_RootOrder: 0
@@ -2177,7 +2263,7 @@ GameObject:
   - 82: {fileID: 1619603271}
   m_Layer: 8
   m_Name: comboaudio1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2499,7 +2585,7 @@ GameObject:
   - 114: {fileID: 1644942555}
   m_Layer: 8
   m_Name: hurtaudio
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2641,6 +2727,10 @@ Prefab:
       propertyPath: playerHealthBar
       value: 
       objectReference: {fileID: 1380201583}
+    - target: {fileID: 8200010, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
+      propertyPath: m_Volume
+      value: .5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
   m_RootGameObject: {fileID: 786232692}
@@ -2789,6 +2879,8 @@ Transform:
   - {fileID: 1644942554}
   - {fileID: 1311338643}
   - {fileID: 81020106}
+  - {fileID: 16342011}
+  - {fileID: 330349783}
   m_Father: {fileID: 786232693}
   m_RootOrder: 1
 --- !u!1 &1828768660
@@ -2968,7 +3060,7 @@ GameObject:
   - 82: {fileID: 1916328084}
   m_Layer: 8
   m_Name: comboaudio3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3054,6 +3146,7 @@ GameObject:
   - 4: {fileID: 2031853106}
   - 212: {fileID: 2031853105}
   - 95: {fileID: 2031853104}
+  - 82: {fileID: 2031853107}
   m_Layer: 0
   m_Name: BOSSHealth
   m_TagString: Untagged
@@ -3111,6 +3204,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!82 &2031853107
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031853103}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 54584cfb22f8d7b49bb8f0da78cee83b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2040567447
 GameObject:
   m_ObjectHideFlags: 0
