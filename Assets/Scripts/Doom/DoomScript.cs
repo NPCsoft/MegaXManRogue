@@ -23,6 +23,10 @@ public class DoomScript : MonoBehaviour {
 	public bool moveRight = false;
 	public bool lastDirectionLeft = false;
 
+	public AudioClip pinkbeams;
+	public AudioClip yellowbeam;
+	public AudioClip laugh;
+
 
 	// Use this for initialization
 	void Start () {
@@ -78,6 +82,7 @@ public class DoomScript : MonoBehaviour {
 		}
 //		anim.Play ("PinkGround");
 		anim.Play ("Idle");
+		audio.PlayOneShot (laugh);
 		Invoke ("JumpToMid",1f);
 	}
 
@@ -114,6 +119,7 @@ public class DoomScript : MonoBehaviour {
 		moveLeft = false;
 		moveRight = false;
 		anim.Play ("AirPink");
+		audio.PlayOneShot (pinkbeams);
 		Invoke ("ContinueFallMid",1f);
 	}
 
@@ -144,6 +150,7 @@ public class DoomScript : MonoBehaviour {
 		}
 
 		anim.Play ("BeamGround");
+		audio.PlayOneShot (yellowbeam);
 		Invoke ("JumpToEdge",1f);
 	}
 
@@ -189,6 +196,7 @@ public class DoomScript : MonoBehaviour {
 		moveLeft = false;
 		moveRight = false;
 		anim.Play ("AirPink");
+		audio.PlayOneShot (pinkbeams);
 		Invoke ("ContinueFallEdge",1f);
 	}
 
