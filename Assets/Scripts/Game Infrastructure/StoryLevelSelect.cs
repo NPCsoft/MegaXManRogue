@@ -14,8 +14,12 @@ public class StoryLevelSelect: MonoBehaviour {
 		if (PlayerPrefs.GetInt ("MagnetoLevel") == 1 && PlayerPrefs.GetInt ("JuggernautLevel") == 1 &&
 		    PlayerPrefs.GetInt ("VenomLevel") == 1)
 			myMaterial.shader = Shader.Find ("Unlit/Texture");
-		else if (PlayerPrefs.GetInt ("MisterSinisterLevel") != 1)
+		else
+		{
+			myMaterial.SetTexture (0, null);
 			myMaterial.shader = Shader.Find ("Diffuse");
+			myMaterial.SetColor ("_Color", Color.gray);
+		}
 
 		if (PlayerPrefs.GetInt ("MagnetoLevel") == 1 && PlayerPrefs.GetInt ("JuggernautLevel") == 1 &&
 		    PlayerPrefs.GetInt ("VenomLevel") == 1)

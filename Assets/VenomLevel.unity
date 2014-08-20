@@ -623,6 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb221e5eaf35ff443a4c79fda623d89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  refiretimer: 0
   ShadowWoosh: {fileID: 100000, guid: c7c5a98d328ee8843beef576f38fef88, type: 2}
 --- !u!1 &294559103
 GameObject:

@@ -32,7 +32,7 @@ public class HitDetection : MonoBehaviour {
 		}
 		if (enemy.tag == "Cyclops"){
 			if (gameObject.name == "PlayerWebProjectile(Clone)")
-				enemy.gameObject.GetComponent<EnemyHealth2>().TakeDamage(damage * 3);
+				enemy.gameObject.GetComponent<EnemyHealth2>().TakeDamage(damage * 4);
 			else
 				enemy.gameObject.GetComponent<EnemyHealth2>().TakeDamage(damage);
 		}

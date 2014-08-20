@@ -75,7 +75,7 @@ public class DamageDetection : MonoBehaviour {
 			}
 				else if (enemy.gameObject.name == "AngleLaser(Clone)")
 			{
-				if (currentHealth <= 5f)
+				if (currentHealth <= 6f)
 				{
 					currentHealth = 0f;
 					anim.SetFloat("playerHealth" , currentHealth);
@@ -83,7 +83,7 @@ public class DamageDetection : MonoBehaviour {
 				else
 				{
 					Player.anim.SetTrigger("Hurt");
-					currentHealth -= 5f;
+					currentHealth -= 6f;
 					Player.hitstuntimer = 0f;
 					Player.iframetimer = 0f;
 					anim.SetFloat("playerHealth" , currentHealth);
@@ -94,7 +94,7 @@ public class DamageDetection : MonoBehaviour {
 			         || enemy.gameObject.name == "GroundShock31"
 			         || enemy.gameObject.name == "GroundShock41")
 			{
-				if (currentHealth <= 6f)
+				if (currentHealth <= 8f)
 				{
 					currentHealth = 0f;
 					anim.SetFloat("playerHealth" , currentHealth);
@@ -102,7 +102,7 @@ public class DamageDetection : MonoBehaviour {
 				else
 				{
 					Player.anim.SetTrigger("Hurt");
-					currentHealth -= 6f;
+					currentHealth -= 8f;
 					Player.hitstuntimer = 0f;
 					Player.iframetimer = 0f;
 					anim.SetFloat("playerHealth" , currentHealth);
@@ -152,12 +152,64 @@ public class DamageDetection : MonoBehaviour {
 				{
 					Player.anim.SetTrigger("Webbed");
 					currentHealth -= 1f;
-					Player.hitstuntimer = 0f;
+					//no knockback cause webbed
+//					Player.hitstuntimer = 0f;
 					Player.iframetimer = 0f;
 					anim.SetFloat("playerHealth" , currentHealth);
 					Webbing.anim.SetTrigger ("webhit");
 					Webbing.didHit = true;
 					Destroy (enemy.gameObject,0.3f);
+				}
+			}
+
+			else if (enemy.gameObject.name == "LickAttack")
+			{
+				if (currentHealth <= 8f)
+				{
+					currentHealth = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+				else
+				{
+					Player.anim.SetTrigger("Hurt");
+					currentHealth -= 8f;
+					Player.hitstuntimer = 0f;
+					Player.iframetimer = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+			}
+
+			else if (enemy.gameObject.name == "WhaleAttack")
+			{
+				if (currentHealth <= 5f)
+				{
+					currentHealth = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+				else
+				{
+					Player.anim.SetTrigger("Hurt");
+					currentHealth -= 5f;
+					Player.hitstuntimer = 0f;
+					Player.iframetimer = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+			}
+
+			else if (enemy.gameObject.name == "ShadowStrikeAttack(Clone)")
+			{
+				if (currentHealth <= 4f)
+				{
+					currentHealth = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+				else
+				{
+					Player.anim.SetTrigger("Hurt");
+					currentHealth -= 4f;
+					Player.hitstuntimer = 0f;
+					Player.iframetimer = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
 				}
 			}
 
@@ -195,9 +247,43 @@ public class DamageDetection : MonoBehaviour {
 				}
 			}
 
+			else if (enemy.gameObject.name == "GroundBeam")
+			{
+				if (currentHealth <= 6f)
+				{
+					currentHealth = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+				else
+				{
+					Player.anim.SetTrigger("Hurt");
+					currentHealth -= 6f;
+					Player.hitstuntimer = 0f;
+					Player.iframetimer = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+			}
+
+			else if (enemy.gameObject.name == "Pink1(Clone)")
+			{
+				if (currentHealth <= 5f)
+				{
+					currentHealth = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+				else
+				{
+					Player.anim.SetTrigger("Hurt");
+					currentHealth -= 5f;
+					Player.hitstuntimer = 0f;
+					Player.iframetimer = 0f;
+					anim.SetFloat("playerHealth" , currentHealth);
+				}
+			}
+
 				else
 				{			
-				if (currentHealth <= 2f)
+				if (currentHealth <= 3f)
 					{
 						currentHealth = 0f;
 						anim.SetFloat("playerHealth" , currentHealth);
@@ -205,7 +291,7 @@ public class DamageDetection : MonoBehaviour {
 					else
 					{
 						Player.anim.SetTrigger("Hurt");
-						currentHealth -= 2f;
+						currentHealth -= 3f;
 						Player.hitstuntimer = 0f;
 						Player.iframetimer = 0f;
 						anim.SetFloat("playerHealth" , currentHealth);

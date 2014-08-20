@@ -50,21 +50,21 @@ public class BossKilled : MonoBehaviour {
 	{
 		DamageDetection.currentHealth = 28;
 		PlayerPrefs.SetInt (stageName, 1);
-		Application.LoadLevel ("GetMagneto");
+		Application.LoadLevel ("MagnetoGet");
 	}
 
 	void GetJug()
 	{
 		DamageDetection.currentHealth = 28;
 		PlayerPrefs.SetInt (stageName, 1);
-		Application.LoadLevel ("GetJuggernaut");
+		Application.LoadLevel ("JuggernautGet");
 	}
 
 	void GetVen()
 	{
 		DamageDetection.currentHealth = 28;
 		PlayerPrefs.SetInt (stageName, 1);
-		Application.LoadLevel ("GetVenom");
+		Application.LoadLevel ("VenomGet");
 	}
 
 	void WinScreen()
