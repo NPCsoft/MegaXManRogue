@@ -4,6 +4,7 @@ using System.Collections;
 public class BossRoomWalls : MonoBehaviour {
 
 	public float recrashtimer = 5f;
+	public static bool camshake = false;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,7 @@ public class BossRoomWalls : MonoBehaviour {
 			gameObject.tag = "Enemy";
 			transform.localPosition = Vector3.zero;
 			Invoke ("Backtowall",1f);
+			camshake = true;
 		}
 	
 	}
@@ -28,5 +30,6 @@ public class BossRoomWalls : MonoBehaviour {
 	{
 		transform.localPosition = new Vector3 (0,1,0);
 		gameObject.tag = "Player";
+		camshake = false;
 	}
 }
