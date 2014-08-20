@@ -1238,11 +1238,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gotolocation: {fileID: 1261363794}
+  shakedelay: 3
   followdelay: 3
   follow: 0
   followspeed: 8
   minlimitx: -15
   maxlimitx: 15
+  shakesound: {fileID: 8300000, guid: c39b7858dc4f6444e9e61e1c57aad834, type: 3}
 --- !u!1 &591483573
 GameObject:
   m_ObjectHideFlags: 0

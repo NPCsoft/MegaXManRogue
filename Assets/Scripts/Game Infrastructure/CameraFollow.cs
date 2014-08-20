@@ -10,6 +10,7 @@ public class CameraFollow : MonoBehaviour {
 	public float followspeed = 5f;
 	public float minlimitx = -15f;
 	public float maxlimitx = 15f;
+	public AudioClip shakesound;
 
 	// Use this for initialization
 	void Start () {
@@ -44,7 +45,7 @@ public class CameraFollow : MonoBehaviour {
 		if (BossRoomWalls.camshake == true && shakedelay > 3f)
 		{
 			transform.Translate (Vector2.up * 0.1f);
-
+			audio.PlayOneShot (shakesound);
 			Invoke ("Deshake", 0.01f);
 			shakedelay = 0f;
 		}
