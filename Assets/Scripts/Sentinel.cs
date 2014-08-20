@@ -45,7 +45,7 @@ public class Sentinel : MonoBehaviour {
 	{
 		anim.Play ("Intro");
 		audio.PlayOneShot (neutralize);
-		Invoke ("LowLaserAttack", 3f);
+		Invoke ("LowLaserAttack", 5f);
 	}
 
 	void LowLaserAttack()
