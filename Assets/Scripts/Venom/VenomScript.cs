@@ -26,6 +26,9 @@ public class VenomScript : MonoBehaviour {
 		healthanim = bossHealthBar.GetComponent<Animator>();
 		healthanim.SetFloat ("bossHealth",EnemyHealth.currentHealth);
 		anim = venomSprite.GetComponent<Animator>();
+		crawling = false;
+		whaling = false;
+		canturn = true;
 		Invoke ("Taunt",3f);
 	
 	}

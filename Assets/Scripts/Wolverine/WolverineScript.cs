@@ -30,6 +30,8 @@ public class WolverineScript : MonoBehaviour {
 		healthanim.SetFloat ("bossHealth",EnemyHealth.currentHealth);
 		anim = wolverineSprite.GetComponent<Animator>();
 		audio.PlayOneShot (bub);
+		wallhit = false;
+		groundhit = false;
 	}
 	
 	// Update is called once per frame

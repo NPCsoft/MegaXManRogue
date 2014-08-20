@@ -1240,7 +1240,7 @@ MonoBehaviour:
   gotolocation: {fileID: 1261363794}
   followdelay: 3
   follow: 0
-  followspeed: 6
+  followspeed: 8
   minlimitx: -15
   maxlimitx: 15
 --- !u!1 &591483573

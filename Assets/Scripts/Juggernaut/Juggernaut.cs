@@ -26,6 +26,8 @@ public class Juggernaut : MonoBehaviour {
 
 		healthanim = bossHealthBar.GetComponent<Animator>();
 		anim = juggernautSprite.GetComponent<Animator>();
+		juggerCharge = false;
+		juggerChargeComplete = false;
 		Invoke ("AttackPicker", 0f);
 	}
 	

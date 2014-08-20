@@ -15,6 +15,13 @@ public class DamageDetection : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (playerPlayer.transform.position.y < -5f)
+		{
+			anim.SetFloat ("playerHealth",0);
+			currentHealth = 0f;
+		}
+
 		if (currentHealth > 28f)
 			currentHealth = 28f;
 		if (currentHealth <= 0f)

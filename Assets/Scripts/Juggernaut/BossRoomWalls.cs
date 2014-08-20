@@ -19,7 +19,7 @@ public class BossRoomWalls : MonoBehaviour {
 			recrashtimer = 0f;
 			gameObject.tag = "Enemy";
 			transform.localPosition = Vector3.zero;
-			Invoke ("Backtowall",1f);
+			Invoke ("Backtowall",0.7f);
 			camshake = true;
 		}
 	
