@@ -187,7 +187,6 @@ GameObject:
   - 23: {fileID: 46620812}
   - 114: {fileID: 46620811}
   - 114: {fileID: 46620815}
-  - 82: {fileID: 46620816}
   m_Layer: 0
   m_Name: VenomBoss
   m_TagString: Untagged
@@ -272,64 +271,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: VenomLevel
   myMaterial: {fileID: 2100000, guid: efb8680c4a0ff3445827714e2b4f0e09, type: 2}
---- !u!82 &46620816
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 46620809}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: .150000006
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!1 &48172601
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +282,7 @@ GameObject:
   - 33: {fileID: 48172606}
   - 65: {fileID: 48172605}
   - 23: {fileID: 48172604}
+  - 114: {fileID: 48172607}
   - 82: {fileID: 48172603}
   m_Layer: 0
   m_Name: Highlight
@@ -358,7 +300,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1.56999993}
   m_LocalScale: {x: 1.25, y: -1.25, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1489457587}
   m_Father: {fileID: 829682894}
   m_RootOrder: 1
 --- !u!82 &48172603
@@ -369,7 +312,7 @@ AudioSource:
   m_GameObject: {fileID: 48172601}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 28c1000ae60cb8c49862ef2c0f722d18, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -425,7 +368,7 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 48172601}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -458,6 +401,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 48172601}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &48172607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 48172601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9716cf7d6d2cae442a3ab6d325c7f4bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelname: MisterSinisterLevel
+  levelname2: DoomLevel
+  errorsound: {fileID: 8300000, guid: 8088eebf789959c48bbd6a5cc34eb54d, type: 3}
+  selectup: {fileID: 752315307}
+  selectdown: {fileID: 740585228}
+  selectleft: {fileID: 740585228}
+  selectright: {fileID: 65947777}
+  controllerdelay: 1
 --- !u!1 &65947777
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,20 +431,39 @@ GameObject:
   - 33: {fileID: 65947781}
   - 65: {fileID: 65947780}
   - 23: {fileID: 65947779}
+  - 114: {fileID: 65947778}
+  - 82: {fileID: 65947783}
   m_Layer: 0
   m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
+--- !u!114 &65947778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 65947777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52839fb9defe25c4e81802538e14614a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelname: VenomLevel
+  selectup: {fileID: 48172601}
+  selectdown: {fileID: 752315307}
+  selectleft: {fileID: 48172601}
+  selectright: {fileID: 740585228}
+  controllerdelay: 1
 --- !u!23 &65947779
 Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 65947777}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -527,6 +508,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 46620810}
   m_RootOrder: 0
+--- !u!82 &65947783
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 65947777}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 1d25928fa20b1164aa6c0017c3b6e97d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &358276026
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,13 +647,15 @@ GameObject:
   - 33: {fileID: 740585233}
   - 65: {fileID: 740585232}
   - 23: {fileID: 740585231}
+  - 114: {fileID: 740585230}
+  - 82: {fileID: 740585234}
   m_Layer: 0
   m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &740585229
 Transform:
   m_ObjectHideFlags: 0
@@ -627,13 +668,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1084753443}
   m_RootOrder: 0
+--- !u!114 &740585230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740585228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52839fb9defe25c4e81802538e14614a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelname: JuggernautLevel
+  selectup: {fileID: 48172601}
+  selectdown: {fileID: 752315307}
+  selectleft: {fileID: 65947777}
+  selectright: {fileID: 48172601}
+  controllerdelay: 1
 --- !u!23 &740585231
 Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740585228}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -666,6 +724,64 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740585228}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &740585234
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740585228}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 1d25928fa20b1164aa6c0017c3b6e97d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &752315307
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,13 +793,15 @@ GameObject:
   - 33: {fileID: 752315312}
   - 65: {fileID: 752315311}
   - 23: {fileID: 752315310}
+  - 114: {fileID: 752315309}
+  - 82: {fileID: 752315313}
   m_Layer: 0
   m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &752315308
 Transform:
   m_ObjectHideFlags: 0
@@ -696,13 +814,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1940579567}
   m_RootOrder: 0
+--- !u!114 &752315309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752315307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52839fb9defe25c4e81802538e14614a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelname: MagnetoLevel
+  selectup: {fileID: 65947777}
+  selectdown: {fileID: 48172601}
+  selectleft: {fileID: 740585228}
+  selectright: {fileID: 65947777}
+  controllerdelay: 1
 --- !u!23 &752315310
 Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 752315307}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -735,6 +870,64 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 752315307}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &752315313
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752315307}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 1d25928fa20b1164aa6c0017c3b6e97d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &829682890
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,9 +1039,9 @@ AudioSource:
   m_GameObject: {fileID: 829682890}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 28c1000ae60cb8c49862ef2c0f722d18, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .150000006
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -993,7 +1186,6 @@ GameObject:
   - 23: {fileID: 1084753440}
   - 114: {fileID: 1084753439}
   - 114: {fileID: 1084753444}
-  - 82: {fileID: 1084753445}
   m_Layer: 0
   m_Name: JuggernautBoss
   m_TagString: Untagged
@@ -1078,17 +1270,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: JuggernautLevel
   myMaterial: {fileID: 2100000, guid: db53fbab0038ef749ae5cc06e125505b, type: 2}
---- !u!82 &1084753445
+--- !u!1 &1489457586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1489457587}
+  - 82: {fileID: 1489457588}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1489457587
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489457586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 48172602}
+  m_RootOrder: 0
+--- !u!82 &1489457588
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1084753438}
+  m_GameObject: {fileID: 1489457586}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1d25928fa20b1164aa6c0017c3b6e97d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .150000006
+  m_Volume: .25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1149,7 +1369,6 @@ GameObject:
   - 23: {fileID: 1940579564}
   - 114: {fileID: 1940579563}
   - 114: {fileID: 1940579568}
-  - 82: {fileID: 1940579569}
   m_Layer: 0
   m_Name: MagnetoBoss
   m_TagString: Untagged
@@ -1234,61 +1453,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: MagnetoLevel
   myMaterial: {fileID: 2100000, guid: 1b8f52118cf474e45aaa38a1bcd56a85, type: 2}
---- !u!82 &1940579569
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1940579562}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: .150000006
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2

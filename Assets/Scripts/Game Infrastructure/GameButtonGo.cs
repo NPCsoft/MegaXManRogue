@@ -23,7 +23,7 @@ public class GameButtonGo : MonoBehaviour {
 
 		if (selectup != null)
 		{
-			if (Input.GetAxis ("Vertical") > 0f)
+			if (Input.GetAxis ("Vertical") > 0f && Input.GetAxis ("Horizontal") == 0f)
 			{
 				selectup.SetActive (true);
 			}
@@ -31,7 +31,7 @@ public class GameButtonGo : MonoBehaviour {
 
 		if (selectdown != null)
 		{
-			if (Input.GetAxis ("Vertical") < 0f)
+				if (Input.GetAxis ("Vertical") < 0f && Input.GetAxis ("Horizontal") == 0f)
 			{
 				selectdown.SetActive (true);
 			}
@@ -39,7 +39,7 @@ public class GameButtonGo : MonoBehaviour {
 
 		if (selectright != null)
 		{
-			if (Input.GetAxis ("Horizontal") > 0f)
+				if (Input.GetAxis ("Horizontal") > 0f && Input.GetAxis ("Vertical") == 0f)
 			{
 				selectright.SetActive (true);
 			}
@@ -47,7 +47,7 @@ public class GameButtonGo : MonoBehaviour {
 
 		if (selectleft != null)
 		{
-			if (Input.GetAxis ("Horizontal") < 0f)
+				if (Input.GetAxis ("Horizontal") < 0f && Input.GetAxis ("Vertical") == 0f)
 			{
 				selectleft.SetActive (true);
 			}
