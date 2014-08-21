@@ -43,6 +43,12 @@ public class Player : MonoBehaviour {
 
 	void Start () {
 		anim = playerSprite.GetComponent<Animator>();
+		WallLeft = false;
+		WallRight = false;
+		isDashing = false;
+		Grounded = true;
+		hitstuntimer = endhitstuntimer;
+		iframetimer = endiframetimer;
 	}
 	
 	// Update is called once per frame
