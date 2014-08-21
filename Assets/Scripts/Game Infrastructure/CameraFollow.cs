@@ -13,7 +13,6 @@ public class CameraFollow : MonoBehaviour {
 	public AudioClip shakesound;
 	public float dashfollowspeed = 8f;
 	public float walkfollowspeed = 3.5f;
-	public float speeddelay = 0f;
 	// Use this for initialization
 	void Start () {
 		Invoke ("BeginFollow",followdelay);
@@ -37,6 +36,7 @@ public class CameraFollow : MonoBehaviour {
 				{
 					transform.Translate (Vector2.right * followspeed * Time.deltaTime);
 				}
+			
 			}
 
 			if (gotolocation.position.x < transform.position.x - 0.5f)
