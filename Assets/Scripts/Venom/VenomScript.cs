@@ -35,6 +35,17 @@ public class VenomScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		anim.SetFloat("xScale", venomSprite.localScale.x);
+
+		if (EnemyHealth.dead)
+		{
+			CancelInvoke();
+			crawling = false;
+			whaling = false;
+			canturn = false;
+			anim.SetTrigger ("Dead");
+		}
+
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
 		refiretimer += Time.deltaTime;
 

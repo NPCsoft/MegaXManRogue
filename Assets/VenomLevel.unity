@@ -301,6 +301,10 @@ Prefab:
       propertyPath: tauntSprite
       value: 
       objectReference: {fileID: 294559105}
+    - target: {fileID: 400012, guid: ddccc4a7911194249bb8102b4f5626d7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ddccc4a7911194249bb8102b4f5626d7, type: 2}
   m_RootGameObject: {fileID: 1874679742}
