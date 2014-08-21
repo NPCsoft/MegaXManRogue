@@ -1206,6 +1206,10 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
   m_RootGameObject: {fileID: 1695494525}
@@ -1449,7 +1453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSprite: {fileID: 1469807594}
   currentboss: {fileID: 538606677}
-  cyclops: {fileID: 382528814}
+  cyclops: {fileID: 382528816}
   speed: 3.5
   walkSpeed: 3.5
   dashSpeed: 8
@@ -1631,6 +1635,10 @@ Prefab:
       propertyPath: bossHealthBar
       value: 
       objectReference: {fileID: 1828452918}
+    - target: {fileID: 11400006, guid: ad3f9ebb226c2394c941a62d86943b08, type: 2}
+      propertyPath: cyclopsSprite
+      value: 
+      objectReference: {fileID: 382528815}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad3f9ebb226c2394c941a62d86943b08, type: 2}
   m_RootGameObject: {fileID: 1783037279}
@@ -1866,7 +1874,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
       propertyPath: cyclops
       value: 
-      objectReference: {fileID: 382528814}
+      objectReference: {fileID: 382528816}
     - target: {fileID: 11400014, guid: 3409ac85605da1d4f9b4817aedc56727, type: 2}
       propertyPath: currentBoss
       value: 
@@ -3096,6 +3104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossHealthBar: {fileID: 1828452918}
+  cyclopsSprite: {fileID: 382528815}
 --- !u!1001 &1791252969
 Prefab:
   m_ObjectHideFlags: 0

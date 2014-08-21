@@ -37,6 +37,20 @@ public class WolverineScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		anim.SetFloat("xScale", wolverineSprite.localScale.x);
+		
+		if (EnemyHealth.dead)
+		{
+			wallhit = false;
+			groundhit = false;
+			CancelInvoke();
+			drillup = false;
+			drilldown = false;
+			drillstraight = false;
+			anim.SetTrigger ("Dead");
+			rigidbody2D.gravityScale = 1f;
+		}
+
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
 	if (!anim.GetCurrentAnimatorStateInfo(0).IsName ("Intro"))
 		{
