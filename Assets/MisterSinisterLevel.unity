@@ -1190,6 +1190,18 @@ Prefab:
       propertyPath: playerLocation
       value: 
       objectReference: {fileID: 855331794}
+    - target: {fileID: 100002, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100002, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
+      propertyPath: m_Size.y
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100002, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
+      propertyPath: m_Center.y
+      value: .159999996
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
   m_RootGameObject: {fileID: 1695494525}
@@ -2050,8 +2062,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 4.13999987, y: .5}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 4.13999987, y: .300000012}
+  m_Center: {x: 0, y: .159999996}
 --- !u!1 &1321398353
 GameObject:
   m_ObjectHideFlags: 0
