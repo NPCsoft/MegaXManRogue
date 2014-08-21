@@ -18,10 +18,16 @@ public class ChargeComplete : MonoBehaviour {
 		if (other.gameObject.tag == "Wall")
 		{
 			Juggernaut.juggerCharge = false;
-			Juggernaut.staticjuggernautSprite.localScale = new Vector3 (Juggernaut.staticjuggernautSprite.localScale.x * -1, Juggernaut.staticjuggernautSprite.localScale.y, Juggernaut.staticjuggernautSprite.localScale.z);
 			Juggernaut.juggerChargeComplete = true;
-			Juggernaut.anim.Play ("Idle");
+			Juggernaut.anim.Play ("WallCrash");
+			Invoke ("TurnAndIdle", 0.2f);
 		}
+	}
+
+	void TurnAndIdle()
+	{
+		Juggernaut.staticjuggernautSprite.localScale = new Vector3 (Juggernaut.staticjuggernautSprite.localScale.x * -1, Juggernaut.staticjuggernautSprite.localScale.y, Juggernaut.staticjuggernautSprite.localScale.z);
+		Juggernaut.anim.Play ("Idle");
 	}
 	
 }
