@@ -33,6 +33,14 @@ public class Juggernaut : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (EnemyHealth.dead)
+		{
+			CancelInvoke();
+			juggerCharge = false;
+			juggerChargeComplete = false;
+			anim.SetTrigger ("Dead");
+		}
+
 		attackpicktimer += Time.deltaTime;
 		healthanim.SetFloat ("bossHealth",EnemyHealth.currentHealth);
 

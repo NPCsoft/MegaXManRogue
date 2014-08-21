@@ -2494,6 +2494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentBoss: {fileID: 1874679742}
   currentBoss2: {fileID: 0}
+  damagedetector: {fileID: 834139409}
 --- !u!82 &1504552561
 AudioSource:
   m_ObjectHideFlags: 0
