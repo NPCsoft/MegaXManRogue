@@ -42,7 +42,7 @@ public class BossKilled : MonoBehaviour {
 				}
 			}
 		}
-		else
+		else if (currentBoss2 != null)
 		{
 			if (EnemyHealth.dead && EnemyHealth2.dead2)
 			{
@@ -86,6 +86,7 @@ public class BossKilled : MonoBehaviour {
 
 	void WinScreen()
 	{
+		DamageDetection.currentHealth = 28;
 		PlayerPrefs.SetInt (stageName, 1);
 		Application.LoadLevel ("WinScreen");
 	}

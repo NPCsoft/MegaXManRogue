@@ -22,6 +22,14 @@ public class Sentinel : MonoBehaviour {
 		healthanim.SetFloat ("bossHealth",EnemyHealth.currentHealth);
 	}
 	void Update (){
+
+		if (EnemyHealth.dead)
+		{
+			CancelInvoke();
+			dashing = false;
+			anim.SetTrigger ("Dead");
+		}
+
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
 		if (dashing)
 		{

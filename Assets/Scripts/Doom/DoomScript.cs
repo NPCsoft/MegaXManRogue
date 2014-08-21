@@ -39,6 +39,19 @@ public class DoomScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (EnemyHealth.dead)
+		{
+			CancelInvoke();
+			jumping = false;
+			falling = true;
+			moveLeft = false;
+			moveRight = false;
+
+			anim.SetTrigger ("Dead");
+		}
+
+
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
 //		if (jumping)
 //		{
