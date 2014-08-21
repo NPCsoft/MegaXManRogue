@@ -6,6 +6,8 @@ public class CyclopsScript : MonoBehaviour {
 	public static Animator healthanim;
 	public static Animator anim;
 	public Transform cyclopsSprite;
+	public BoxCollider2D mybox;
+
 	// Use this for initialization
 	void Start () {
 
@@ -20,6 +22,7 @@ public class CyclopsScript : MonoBehaviour {
 		if (EnemyHealth2.dead2)
 		{
 			anim.SetTrigger ("Dead2");
+			mybox.enabled = false;
 		}
 		healthanim.SetFloat("bossHealth2",EnemyHealth2.currentHealth);
 

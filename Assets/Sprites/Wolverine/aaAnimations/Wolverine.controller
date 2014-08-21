@@ -52,6 +52,30 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
+--- !u!1101 &110125530
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 110291012}
+  m_TransitionDuration: .100000001
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Dead
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  - m_ConditionMode: 4
+    m_ConditionEvent: xScale
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110164710
 Transition:
   serializedVersion: 2
@@ -69,30 +93,6 @@ Transition:
     m_EventTreshold: 0
     m_ExitTime: .899999976
   - m_ConditionMode: 3
-    m_ConditionEvent: xScale
-    m_EventTreshold: 0
-    m_ExitTime: .899999976
-  m_Atomic: 1
-  m_Solo: 0
-  m_Mute: 0
-  m_CanTransitionToSelf: 0
---- !u!1101 &110172277
-Transition:
-  serializedVersion: 2
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_SrcState: {fileID: 0}
-  m_DstState: {fileID: 110286566}
-  m_TransitionDuration: .100000001
-  m_TransitionOffset: 0
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Dead
-    m_EventTreshold: 0
-    m_ExitTime: .899999976
-  - m_ConditionMode: 4
     m_ConditionEvent: xScale
     m_EventTreshold: 0
     m_ExitTime: .899999976
@@ -156,7 +156,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 60f2eaa62a715164ebb140f664944eab, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -192, y: 36, z: 0}
+  m_Position: {x: -264, y: 24, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -216,7 +216,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 82da1e5cc8eda5044ae7215ab04d57a3, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 215, y: 185, z: 0}
+  m_Position: {x: 0, y: 72, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -265,8 +265,8 @@ StateMachine:
     data:
       first: {fileID: 0}
       second:
-      - {fileID: 110172277}
       - {fileID: 110164710}
+      - {fileID: 110125530}
     data:
       first: {fileID: 110282492}
       second:

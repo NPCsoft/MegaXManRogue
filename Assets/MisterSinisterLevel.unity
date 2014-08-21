@@ -1210,6 +1210,14 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
+      propertyPath: mybox
+      value: 
+      objectReference: {fileID: 1695494527}
+    - target: {fileID: 11400006, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
+      propertyPath: maxHealth
+      value: 28
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
   m_RootGameObject: {fileID: 1695494525}
@@ -1639,6 +1647,22 @@ Prefab:
       propertyPath: cyclopsSprite
       value: 
       objectReference: {fileID: 382528815}
+    - target: {fileID: 11400006, guid: ad3f9ebb226c2394c941a62d86943b08, type: 2}
+      propertyPath: mybox
+      value: 
+      objectReference: {fileID: 1783037280}
+    - target: {fileID: 11400000, guid: ad3f9ebb226c2394c941a62d86943b08, type: 2}
+      propertyPath: hitstoKill
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ad3f9ebb226c2394c941a62d86943b08, type: 2}
+      propertyPath: maxHealth
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ad3f9ebb226c2394c941a62d86943b08, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad3f9ebb226c2394c941a62d86943b08, type: 2}
   m_RootGameObject: {fileID: 1783037279}
@@ -2912,6 +2936,7 @@ MonoBehaviour:
   bub: {fileID: 8300000, guid: b8728775dcca1344cba61e819638067f, type: 3}
   drillclawvoice: {fileID: 8300000, guid: 4bd3870688737f048a384e32b447be1c, type: 3}
   drillclawsound: {fileID: 8300000, guid: 7c2bebe3c21a09740a7dade622793aa2, type: 3}
+  mybox: {fileID: 1695494527}
 --- !u!82 &1695494531
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3105,6 +3130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossHealthBar: {fileID: 1828452918}
   cyclopsSprite: {fileID: 382528815}
+  mybox: {fileID: 1783037280}
 --- !u!1001 &1791252969
 Prefab:
   m_ObjectHideFlags: 0

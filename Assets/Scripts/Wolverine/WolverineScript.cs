@@ -22,6 +22,7 @@ public class WolverineScript : MonoBehaviour {
 	public AudioClip bub;
 	public AudioClip drillclawvoice;
 	public AudioClip drillclawsound;
+	public BoxCollider2D mybox;
 
 	// Use this for initialization
 	void Start () 
@@ -39,20 +40,25 @@ public class WolverineScript : MonoBehaviour {
 	{
 		anim.SetFloat("xScale", wolverineSprite.localScale.x);
 		
-		if (EnemyHealth.dead)
+		if (EnemyHealth.dead && transform.position.y > -2.115467f)
 		{
+			CancelInvoke();
 			wallhit = false;
 			groundhit = false;
-			CancelInvoke();
 			drillup = false;
 			drilldown = false;
 			drillstraight = false;
 			anim.SetTrigger ("Dead");
 			rigidbody2D.gravityScale = 1f;
 		}
+		if (EnemyHealth.dead && transform.position.y <= -2.115467f)
+		{
+			rigidbody2D.gravityScale = 0f;
+			mybox.enabled = false;
+		}
 
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
-	if (!anim.GetCurrentAnimatorStateInfo(0).IsName ("Intro"))
+		if (!anim.GetCurrentAnimatorStateInfo(0).IsName ("Intro") && !anim.GetCurrentAnimatorStateInfo(0).IsName ("Death") && !anim.GetCurrentAnimatorStateInfo(0).IsName ("Death2"))
 		{
 		if (wallhit)
 		{
