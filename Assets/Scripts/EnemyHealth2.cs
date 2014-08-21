@@ -10,10 +10,13 @@ public class EnemyHealth2 : MonoBehaviour {
 	public float rehittimer = 0.3f;
 	public Vector4 initialColor = new Vector4(1f,1f,1f,1f);
 	public Vector4 flickerColor = new Vector4 (1f,0.4f,0.4f,1f);
+	public static bool dead2 = false;
 
 
 	// Use this for initialization
 	void Start () {
+		dead2 = false;
+
 		currentHealth = maxHealth;
 		damageMultiplier = hitstoKill/28;
 		flicker = gameObject.GetComponentInChildren<SpriteRenderer>();
@@ -24,7 +27,7 @@ public class EnemyHealth2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (currentHealth <= 0)
-			Destroy (gameObject, 0.1f);
+			dead2 = true;
 		rehittimer += Time.deltaTime;
 
 	}

@@ -227,7 +227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &84554629
 Renderer:
   m_ObjectHideFlags: 0
@@ -1990,6 +1990,14 @@ Prefab:
     - target: {fileID: 8200008, guid: 186ad6bef0bffb7408254887eebaa436, type: 2}
       propertyPath: m_Volume
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 186ad6bef0bffb7408254887eebaa436, type: 2}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 186ad6bef0bffb7408254887eebaa436, type: 2}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 186ad6bef0bffb7408254887eebaa436, type: 2}

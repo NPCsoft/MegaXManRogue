@@ -31,6 +31,18 @@ public class Magneto : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
+		anim.SetFloat("xScale", magnetoSprite.localScale.x);
+
+		if (EnemyHealth.dead)
+		{
+			CancelInvoke();
+			goUp = false;
+			goDown = false;
+			goLeft = false;
+			goRight = false;
+			anim.SetTrigger ("Dead");
+			rigidbody2D.gravityScale = 1f;
+		}
 
 		if (playerLocation.position.x > transform.position.x){
 			magnetoSprite.transform.localScale = new Vector3 (1,1,1);

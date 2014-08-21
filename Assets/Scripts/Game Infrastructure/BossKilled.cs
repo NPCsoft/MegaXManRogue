@@ -16,9 +16,11 @@ public class BossKilled : MonoBehaviour {
 	void Update () {
 		delay += Time.deltaTime;
 
-	if (currentBoss == null && currentBoss2 == null)
+	if (currentBoss2 == null)
 		{
-			damagedetector.SetActive (false);
+			if (EnemyHealth.dead)
+			{
+				damagedetector.SetActive (false);
 			if (delay > 7f)
 			{
 				delay = 0f;
@@ -37,6 +39,19 @@ public class BossKilled : MonoBehaviour {
 				}
 				else
 					Invoke ("BackToStageSelect",5f);
+				}
+			}
+		}
+		else
+		{
+			if (EnemyHealth.dead && EnemyHealth2.dead2)
+			{
+				damagedetector.SetActive (false);
+				if (delay > 7f)
+				{
+					delay = 0f;
+					Invoke ("BackToStageSelect",5f);
+				}
 			}
 		}
 	}

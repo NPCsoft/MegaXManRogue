@@ -5,7 +5,7 @@ using System.Collections;
 public class Player : MonoBehaviour {
 	public Transform playerSprite;
 	public Animator currentboss;
-	public GameObject cyclops;
+	public Animator cyclops;
 
 	public float speed = 4f;
 	public float walkSpeed = 4f;
@@ -108,8 +108,12 @@ public class Player : MonoBehaviour {
 		float move = Input.GetAxis ("Horizontal");
 		
 			//animation stuff
-		if (currentboss != null | cyclops != null){
-		if (currentboss == null || !currentboss.GetCurrentAnimatorStateInfo(0).IsName ("Intro")){
+		if (!currentboss.GetCurrentAnimatorStateInfo(0).IsName ("Death") ||
+		    !currentboss.GetCurrentAnimatorStateInfo(0).IsName ("Death2")
+		    | cyclops == null || !cyclops.GetCurrentAnimatorStateInfo(0).IsName ("Death"))
+		{
+			if (!currentboss.GetCurrentAnimatorStateInfo(0).IsName ("Intro"))
+			{
 
 		anim.SetFloat("Speed",Mathf.Abs (move));
 			}}
@@ -150,8 +154,11 @@ public class Player : MonoBehaviour {
 			wallSlide = true;
 		else
 			wallSlide = false;
-		if (currentboss != null |  cyclops != null){
-		if (currentboss == null || !currentboss.GetCurrentAnimatorStateInfo(0).IsName ("Intro")){
+		if (!currentboss.GetCurrentAnimatorStateInfo(0).IsName ("Death") ||
+		    !currentboss.GetCurrentAnimatorStateInfo(0).IsName ("Death2")
+		    | cyclops == null ||  !cyclops.GetCurrentAnimatorStateInfo(0).IsName ("Death"))
+		{
+		if (!currentboss.GetCurrentAnimatorStateInfo(0).IsName ("Intro")){
 
 		if (!anim.GetCurrentAnimatorStateInfo(0).IsName( "Webbed")){
 		//standard horizontal movement
