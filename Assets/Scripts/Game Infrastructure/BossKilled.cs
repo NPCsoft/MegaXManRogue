@@ -7,6 +7,7 @@ public class BossKilled : MonoBehaviour {
 	private float delay = 0f;
 	public GameObject currentBoss;
 	public GameObject currentBoss2;
+	public GameObject damagedetector;
 	void Start () {
 		stageName = Application.loadedLevelName;
 	}
@@ -17,6 +18,7 @@ public class BossKilled : MonoBehaviour {
 
 	if (currentBoss == null && currentBoss2 == null)
 		{
+			damagedetector.SetActive (false);
 			if (delay > 7f)
 			{
 				delay = 0f;
