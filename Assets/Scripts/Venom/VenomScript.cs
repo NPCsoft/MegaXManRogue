@@ -85,7 +85,14 @@ public class VenomScript : MonoBehaviour {
 		crawling = true;
 		anim.Play ("Crawl");
 		if (Webbing.didHit)
-			Invoke ("Licking",Webbing.distancetraveled * 2);
+		{
+			if (Webbing.distancetraveled > 0.8f)
+				Invoke ("Licking",Webbing.distancetraveled * 2f);
+			else if (Webbing.distancetraveled < 0.5f)
+				Invoke ("Licking",Webbing.distancetraveled * 0.1f);
+			else
+				Invoke ("Licking",Webbing.distancetraveled * 1.5f);
+		}
 		else
 			Invoke ("BigBite", 1f);
 	}
@@ -108,7 +115,7 @@ public class VenomScript : MonoBehaviour {
 	void Whale(){
 		anim.Play ("Crawl");
 		whaling = true;
-		Invoke ("WhaleBreak",1f);
+		Invoke ("WhaleBreak",1.5f);
 	}
 
 	void WhaleBreak(){
