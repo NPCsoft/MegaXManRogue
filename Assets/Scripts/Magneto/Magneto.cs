@@ -44,6 +44,7 @@ public class Magneto : MonoBehaviour {
 			rigidbody2D.gravityScale = 1f;
 		}
 
+		if (!EnemyHealth.dead){
 		if (playerLocation.position.x > transform.position.x){
 			magnetoSprite.transform.localScale = new Vector3 (1,1,1);
 			magnetoSprite.transform.localPosition = new Vector3 (0.5f,0f,0f);
@@ -51,7 +52,7 @@ public class Magneto : MonoBehaviour {
 		else{
 			magnetoSprite.transform.localScale = new Vector3 (-1,1,1);
 			magnetoSprite.transform.localPosition = new Vector3 (0,0,0);
-		}
+			}}
 		refiretimer += Time.deltaTime;
 
 		if (goUp)
