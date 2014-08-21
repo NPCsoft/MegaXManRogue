@@ -220,7 +220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 65947777}
-  selectionTone: {fileID: 8300000, guid: 1d25928fa20b1164aa6c0017c3b6e97d, type: 3}
 --- !u!23 &46620812
 Renderer:
   m_ObjectHideFlags: 0
@@ -822,7 +821,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 48172601}
-  selectionTone: {fileID: 8300000, guid: 1d25928fa20b1164aa6c0017c3b6e97d, type: 3}
 --- !u!114 &829682896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,7 +1013,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 740585228}
-  selectionTone: {fileID: 8300000, guid: 1d25928fa20b1164aa6c0017c3b6e97d, type: 3}
 --- !u!23 &1084753440
 Renderer:
   m_ObjectHideFlags: 0
@@ -1172,7 +1169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 752315307}
-  selectionTone: {fileID: 8300000, guid: 1d25928fa20b1164aa6c0017c3b6e97d, type: 3}
 --- !u!23 &1940579564
 Renderer:
   m_ObjectHideFlags: 0
