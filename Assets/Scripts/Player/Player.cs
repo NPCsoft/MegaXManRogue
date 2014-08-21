@@ -43,6 +43,7 @@ public class Player : MonoBehaviour {
 
 	void Start () {
 		anim = playerSprite.GetComponent<Animator>();
+		dashTimer = 1.5f;
 		WallLeft = false;
 		WallRight = false;
 		isDashing = false;

@@ -17,6 +17,7 @@ public class SlowTextCrawl : MonoBehaviour {
 		if (gameObject.transform.position.y >= 0f)
 		{
 			if (Input.anyKeyDown)
+				DamageDetection.currentHealth = 28f;
 				Application.LoadLevel ("MainMenu");
 		}
 	}
