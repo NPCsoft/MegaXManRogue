@@ -1315,6 +1315,8 @@ MonoBehaviour:
   minlimitx: -15
   maxlimitx: 15
   shakesound: {fileID: 8300000, guid: c39b7858dc4f6444e9e61e1c57aad834, type: 3}
+  dashfollowspeed: 8
+  walkfollowspeed: 3.5
 --- !u!1 &591483573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,6 +2376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentBoss: {fileID: 2131577854}
   currentBoss2: {fileID: 0}
+  damagedetector: {fileID: 355038353}
 --- !u!82 &1261363796
 AudioSource:
   m_ObjectHideFlags: 0

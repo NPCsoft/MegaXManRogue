@@ -11,16 +11,22 @@ public class CameraFollow : MonoBehaviour {
 	public float minlimitx = -15f;
 	public float maxlimitx = 15f;
 	public AudioClip shakesound;
-
+	public float dashfollowspeed = 8f;
+	public float walkfollowspeed = 3.5f;
+	public float speeddelay = 0f;
 	// Use this for initialization
 	void Start () {
 		Invoke ("BeginFollow",followdelay);
 		BossRoomWalls.camshake = false;
+		followspeed = 10f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
+		if (Player.isDashing)
+			followspeed = dashfollowspeed;
+		if (!Player.isDashing && Player.Grounded)
+			followspeed = walkfollowspeed;
 		shakedelay += Time.deltaTime;
 
 		if (follow)
