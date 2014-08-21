@@ -1202,6 +1202,10 @@ Prefab:
       propertyPath: m_Center.y
       value: .159999996
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c959aba2bfed4949a15904ccd777baa, type: 2}
   m_RootGameObject: {fileID: 1695494525}
@@ -1490,6 +1494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentBoss: {fileID: 1695494525}
   currentBoss2: {fileID: 1783037279}
+  damagedetector: {fileID: 61241575}
 --- !u!82 &855331799
 AudioSource:
   m_ObjectHideFlags: 0
