@@ -110,7 +110,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 33540751}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.7183304, z: 0}
+  m_LocalPosition: {x: 0, y: -11.587162, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1951769416}
@@ -297,7 +297,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862700832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.52888107, y: -.146664143, z: -2}
+  m_LocalPosition: {x: -6.52888107, y: -1.13280344, z: -2}
   m_LocalScale: {x: .100000001, y: .100000001, z: 1}
   m_Children: []
   m_Father: {fileID: 33540753}
@@ -310,7 +310,8 @@ TextMesh:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862700832}
   m_Text: "To find out the story behind why you were beating up those\r\nbaddies,
-    go to MarvelHeroes.com and play for free!\r\r\nThis is just the beginning."
+    and a shot at stopping Doom for real,\r\n\t go to MarvelHeroes.com and play for
+    free!\r\r\nThis is just the beginning."
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -368,7 +369,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933706822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.19764376, y: -2.90663719, z: -2}
+  m_LocalPosition: {x: -4.19764376, y: -3.49832153, z: -2}
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children: []
   m_Father: {fileID: 33540753}
@@ -438,7 +439,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1951769415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.45704746, y: 4.86415577, z: -2}
+  m_LocalPosition: {x: -5.70063257, y: 4.80688381, z: -2}
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children: []
   m_Father: {fileID: 33540753}
@@ -450,7 +451,8 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1951769415}
-  m_Text: "Congratulations!\r\r\nYou saved the universe...\r\n\r\n...For now...\r"
+  m_Text: "Congratulations!\r\r\nYou saved the universe...\r\n\r\nJust kidding.\r\r\nIt
+    was just a Doombot."
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
