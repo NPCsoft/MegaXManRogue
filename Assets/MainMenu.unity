@@ -98,7 +98,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 228031699}
-  m_Text: Version 0.92
+  m_Text: Version 0.95
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -961,6 +961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 524d27f56a62e2b47b11369d923c6611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ng: {fileID: 0}
 --- !u!82 &1137578948
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1129,7 +1130,6 @@ GameObject:
   - 65: {fileID: 1207766382}
   - 23: {fileID: 1207766381}
   - 114: {fileID: 1207766380}
-  - 114: {fileID: 1207766384}
   - 114: {fileID: 1207766386}
   m_Layer: 0
   m_Name: NG
@@ -1204,17 +1204,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1207766378}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1207766384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1207766378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 524d27f56a62e2b47b11369d923c6611, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1207766386
 MonoBehaviour:
   m_ObjectHideFlags: 0

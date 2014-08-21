@@ -3,6 +3,7 @@ using System.Collections;
 
 public class NewGame : MonoBehaviour {
 
+	public GameObject ng;
 	// Use this for initialization
 
 	void Update()
