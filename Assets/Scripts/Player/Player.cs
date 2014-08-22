@@ -47,6 +47,7 @@ public class Player : MonoBehaviour {
 		WallLeft = false;
 		WallRight = false;
 		isDashing = false;
+		lastDirectionRight = true;
 		Grounded = true;
 		hitstuntimer = endhitstuntimer;
 		iframetimer = endiframetimer;
