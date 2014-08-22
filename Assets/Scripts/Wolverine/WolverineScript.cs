@@ -39,8 +39,21 @@ public class WolverineScript : MonoBehaviour {
 	void Update () 
 	{
 		anim.SetFloat("xScale", wolverineSprite.localScale.x);
-		
-		if (EnemyHealth.dead && transform.position.y > -2.115467f)
+
+		if (EnemyHealth.dead && transform.position.y <= -2.115467f)
+		{
+			CancelInvoke();
+			wallhit = false;
+			groundhit = false;
+			drillup = false;
+			drilldown = false;
+			drillstraight = false;
+			anim.SetTrigger ("Dead");
+			rigidbody2D.gravityScale = 0f;
+			mybox.enabled = false;
+		}
+
+		else if (EnemyHealth.dead)
 		{
 			CancelInvoke();
 			wallhit = false;
@@ -51,11 +64,7 @@ public class WolverineScript : MonoBehaviour {
 			anim.SetTrigger ("Dead");
 			rigidbody2D.gravityScale = 1f;
 		}
-		if (EnemyHealth.dead && transform.position.y <= -2.115467f)
-		{
-			rigidbody2D.gravityScale = 0f;
-			mybox.enabled = false;
-		}
+
 
 		healthanim.SetFloat("bossHealth",EnemyHealth.currentHealth);
 		if (!anim.GetCurrentAnimatorStateInfo(0).IsName ("Intro") && !anim.GetCurrentAnimatorStateInfo(0).IsName ("Death") && !anim.GetCurrentAnimatorStateInfo(0).IsName ("Death2"))
