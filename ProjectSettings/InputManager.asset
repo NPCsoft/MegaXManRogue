@@ -22,8 +22,8 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Horizontal
-    descriptiveName: Right (Keyboard)
-    descriptiveNegativeName: Left (Controller
+    descriptiveName: Right (Controller)
+    descriptiveNegativeName: Left (Controller)
     negativeButton: left
     positiveButton: right
     altNegativeButton: a
