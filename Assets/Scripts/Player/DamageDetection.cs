@@ -47,7 +47,12 @@ public class DamageDetection : MonoBehaviour {
 		currentHealth = 28f;
 
 		if (Application.loadedLevelName != "IntroLevel")
-			Application.LoadLevel("StageSelect");
+		{ 
+			if(PlayerPrefs.GetInt("NGP") == 1)
+				Application.LoadLevel ("StageSelectNGP");
+			else
+				Application.LoadLevel("StageSelect");
+		}
 		else
 			Application.LoadLevel("MainMenu");
 	}
