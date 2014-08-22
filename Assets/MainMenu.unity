@@ -1227,6 +1227,7 @@ GameObject:
   - 65: {fileID: 1313821150}
   - 23: {fileID: 1313821149}
   - 114: {fileID: 1313821152}
+  - 114: {fileID: 1313821154}
   - 82: {fileID: 1313821153}
   m_Layer: 0
   m_Name: Highlight
@@ -1361,6 +1362,17 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &1313821154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313821147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c90e24e19441b48bdd42435d493ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1407241426
 GameObject:
   m_ObjectHideFlags: 0

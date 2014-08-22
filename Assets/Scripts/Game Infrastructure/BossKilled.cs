@@ -24,7 +24,11 @@ public class BossKilled : MonoBehaviour {
 			if (delay > 7f)
 			{
 				delay = 0f;
-				if (PlayerPrefs.GetInt(stageName) != 1)
+				if (PlayerPrefs.GetInt("NGP") == 1)
+					{
+						Invoke ("ReturnNGP",5f);
+					}
+				else if (PlayerPrefs.GetInt(stageName) != 1)
 				{
 					if (stageName == "MagnetoLevel")
 						Invoke ("GetMag",5f);
@@ -89,5 +93,11 @@ public class BossKilled : MonoBehaviour {
 		DamageDetection.currentHealth = 28;
 		PlayerPrefs.SetInt (stageName, 1);
 		Application.LoadLevel ("WinScreen");
+	}
+
+	void ReturnNGP()
+	{
+		DamageDetection.currentHealth = 28;
+		Application.LoadLevel ("StageSelectNGP");
 	}
 }
