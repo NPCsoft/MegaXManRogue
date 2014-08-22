@@ -54,6 +54,9 @@ public class BossKilled : MonoBehaviour {
 				if (delay > 7f)
 				{
 					delay = 0f;
+					if (PlayerPrefs.GetInt ("NGP") == 1)
+						Invoke ("ReturnNGP",5f);
+					else
 					Invoke ("BackToStageSelect",5f);
 				}
 			}
