@@ -52,7 +52,7 @@ public class Sentinel : MonoBehaviour {
 	void ShowOff()
 	{
 		anim.Play ("Intro");
-		audio.PlayOneShot (neutralize);
+		GetComponent<AudioSource>().PlayOneShot (neutralize);
 		Invoke ("LowLaserAttack", 5f);
 	}
 
@@ -61,14 +61,14 @@ public class Sentinel : MonoBehaviour {
 		dashing = false;
 		ChangeDirection();
 		anim.Play ("LowLaserAttack");
-		audio.PlayOneShot (chargeup);
+		GetComponent<AudioSource>().PlayOneShot (chargeup);
 		Invoke ("LaserAttack",4f);
 	}
 
 	void LaserAttack()
 	{
 		anim.Play("LaserAttack");
-		audio.PlayOneShot (chargeup);
+		GetComponent<AudioSource>().PlayOneShot (chargeup);
 		Invoke ("Dash", 3f);
 	}
 

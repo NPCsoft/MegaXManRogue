@@ -13,11 +13,11 @@ public class randomizewinaudio : MonoBehaviour {
 	{
 		winnum = Random.Range (0,3);
 		if (winnum == 0)
-			audio.PlayOneShot (win1);
+			GetComponent<AudioSource>().PlayOneShot (win1);
 		else if (winnum == 1)
-			audio.PlayOneShot (win2);
+			GetComponent<AudioSource>().PlayOneShot (win2);
 		else
-			audio.PlayOneShot (win3);
+			GetComponent<AudioSource>().PlayOneShot (win3);
 	}
 	
 	// Update is called once per frame

@@ -30,7 +30,7 @@ public class WolverineScript : MonoBehaviour {
 		healthanim = bossHealthBar.GetComponent<Animator>();
 		healthanim.SetFloat ("bossHealth",EnemyHealth.currentHealth);
 		anim = wolverineSprite.GetComponent<Animator>();
-		audio.PlayOneShot (bub);
+		GetComponent<AudioSource>().PlayOneShot (bub);
 		wallhit = false;
 		groundhit = false;
 	}
@@ -49,7 +49,7 @@ public class WolverineScript : MonoBehaviour {
 			drilldown = false;
 			drillstraight = false;
 			anim.SetTrigger ("Dead");
-			rigidbody2D.gravityScale = 0f;
+			GetComponent<Rigidbody2D>().gravityScale = 0f;
 			mybox.enabled = false;
 		}
 
@@ -62,7 +62,7 @@ public class WolverineScript : MonoBehaviour {
 			drilldown = false;
 			drillstraight = false;
 			anim.SetTrigger ("Dead");
-			rigidbody2D.gravityScale = 1f;
+			GetComponent<Rigidbody2D>().gravityScale = 1f;
 		}
 
 
@@ -127,7 +127,7 @@ public class WolverineScript : MonoBehaviour {
 	void CrouchtoDrillStraightStarting()
 	{
 		anim.Play ("Crouch");
-		audio.PlayOneShot(drillclawvoice);
+		GetComponent<AudioSource>().PlayOneShot(drillclawvoice);
 		Invoke ("DrillStraightStarting",0.2f);
 	}
 
@@ -145,7 +145,7 @@ public class WolverineScript : MonoBehaviour {
 	void DrillStraightStarting()
 	{
 		anim.Play ("DrillClawStraight");
-		audio.PlayOneShot(drillclawsound);
+		GetComponent<AudioSource>().PlayOneShot(drillclawsound);
 		drillstraight = true;
 	}
 
@@ -157,7 +157,7 @@ public class WolverineScript : MonoBehaviour {
 			wolverineSprite.localScale = new Vector3 (1,1,1);
 		anim.Play ("DrillClawStraight");
 		drillstraight = true;
-		audio.PlayOneShot(drillclawsound);
+		GetComponent<AudioSource>().PlayOneShot(drillclawsound);
 
 	}
 	
@@ -174,7 +174,7 @@ public class WolverineScript : MonoBehaviour {
 				wolverineSprite.localScale = new Vector3 (1,1,1);
 			anim.Play ("DrillClawUp");
 			drillup = true;
-			audio.PlayOneShot(drillclawsound);
+			GetComponent<AudioSource>().PlayOneShot(drillclawsound);
 
 		}
 		else
@@ -195,7 +195,7 @@ public class WolverineScript : MonoBehaviour {
 		else
 			wolverineSprite.localScale = new Vector3 (1,1,1);
 		anim.Play ("DrillClawDown");
-				audio.PlayOneShot(drillclawsound);
+				GetComponent<AudioSource>().PlayOneShot(drillclawsound);
 
 		drilldown = true;
 		}

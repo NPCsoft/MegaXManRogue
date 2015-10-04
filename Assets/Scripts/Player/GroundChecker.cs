@@ -19,7 +19,7 @@ public class GroundChecker : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Wall")
 		{	
-			audio.PlayOneShot (landing);
+			GetComponent<AudioSource>().PlayOneShot (landing);
 			++_count;
 		}
 	}
@@ -41,7 +41,7 @@ public class GroundChecker : MonoBehaviour {
 			{
 				Player.Grounded = false;
 				Player.dashTimer = 1f;
-				audio.volume = 0.05f;
+				GetComponent<AudioSource>().volume = 0.05f;
 			}
 		}
 	}

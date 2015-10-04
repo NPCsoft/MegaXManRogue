@@ -16,7 +16,7 @@ public class PlayMusicAfterDelay : MonoBehaviour {
 
 	void PlayMusic()
 	{
-		audio.clip = music;
-		audio.Play();
+		GetComponent<AudioSource>().clip = music;
+		GetComponent<AudioSource>().Play();
 	}
 }

@@ -30,7 +30,7 @@ public class STORYgamebuttongo : MonoBehaviour {
 						Application.LoadLevel (levelname);
 				}
 				else
-					audio.PlayOneShot (errorsound);
+					GetComponent<AudioSource>().PlayOneShot (errorsound);
 			}
 			if (selectup != null)
 			{

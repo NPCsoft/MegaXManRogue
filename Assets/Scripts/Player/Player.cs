@@ -164,8 +164,8 @@ public class Player : MonoBehaviour {
 		if (!anim.GetCurrentAnimatorStateInfo(0).IsName( "Webbed")){
 		//standard horizontal movement
 
-		if (move > 0.1 && WallRight != true && rigidbody2D.velocity.x == 0 || 
-		    move < -0.1 && WallLeft != true && rigidbody2D.velocity.x == 0)
+		if (move > 0.1 && WallRight != true && GetComponent<Rigidbody2D>().velocity.x == 0 || 
+		    move < -0.1 && WallLeft != true && GetComponent<Rigidbody2D>().velocity.x == 0)
 		{
 			if (!Grounded && hitstuntimer > endhitstuntimer || Grounded && !isDashing 
 			    && attacktimer > endattacktimer && hitstuntimer > endhitstuntimer)
@@ -230,7 +230,7 @@ public class Player : MonoBehaviour {
 		
 		// timer = time before regaining control after wall jump
 		if (timer > 0.1f)
-			rigidbody2D.velocity = new Vector2 (0, rigidbody2D.velocity.y);
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (0, GetComponent<Rigidbody2D>().velocity.y);
 		
 		//standard jump
 		if (Input.GetButtonDown ("Jump"))
@@ -242,30 +242,30 @@ public class Player : MonoBehaviour {
 		}
 		
 		//tapping jumps lower than holding
-		if (Input.GetButtonUp ("Jump") && rigidbody2D.velocity.y >= 0)
-			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 0);
+		if (Input.GetButtonUp ("Jump") && GetComponent<Rigidbody2D>().velocity.y >= 0)
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, 0);
 		
 		//falling uniformly, gravity should be on
 		//fallspeed = terminal velocity
 		if (!Grounded && !WallLeft || !Grounded && !WallRight ||
 		    !Grounded && WallLeft && move > -0.1f || !Grounded && WallRight && move < 0.1f)
 		{
-			if (rigidbody2D.velocity.y <= -fallSpeed)
-				rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, -fallSpeed);
+			if (GetComponent<Rigidbody2D>().velocity.y <= -fallSpeed)
+				GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, -fallSpeed);
 		}
 		
 		//wall sliding!
 		//slidedelay is used to cling momentarily
-		if (WallLeft && rigidbody2D.velocity.y < 0.1f && Grounded == false && move < -0.1f|| 
-		    WallRight && rigidbody2D.velocity.y < 0.1f && Grounded == false && move > 0.1f)
+		if (WallLeft && GetComponent<Rigidbody2D>().velocity.y < 0.1f && Grounded == false && move < -0.1f|| 
+		    WallRight && GetComponent<Rigidbody2D>().velocity.y < 0.1f && Grounded == false && move > 0.1f)
 		{			
 			anim.SetBool("WallSliding",true);
 
 			wallslideDelay += Time.deltaTime;
-			rigidbody2D.velocity = Vector2.zero;
+			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 			if (wallSlide == true)
 			{
-				rigidbody2D.velocity = Vector2.zero;
+				GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 				transform.Translate (Vector2.up * -slidespeed * Time.deltaTime);
 			}
 		}
@@ -282,12 +282,12 @@ public class Player : MonoBehaviour {
 			{
 				if (Input.GetButton ("Dash"))
 				{
-					rigidbody2D.velocity = Vector2.up * slidespeed;
+					GetComponent<Rigidbody2D>().velocity = Vector2.up * slidespeed;
 					DashWallJump(1);
 				}
 				else
 				{
-					rigidbody2D.velocity = Vector2.up * slidespeed;
+					GetComponent<Rigidbody2D>().velocity = Vector2.up * slidespeed;
 					WallJump (1);
 				}
 			}
@@ -298,12 +298,12 @@ public class Player : MonoBehaviour {
 			{
 				if (Input.GetButton ("Dash"))
 				{
-					rigidbody2D.velocity = Vector2.up * slidespeed;
+					GetComponent<Rigidbody2D>().velocity = Vector2.up * slidespeed;
 					DashWallJump(-1);
 				}
 				else
 				{
-					rigidbody2D.velocity = Vector2.up * slidespeed;
+					GetComponent<Rigidbody2D>().velocity = Vector2.up * slidespeed;
 					WallJump (-1);
 				}
 			}
@@ -328,16 +328,16 @@ public class Player : MonoBehaviour {
 	void Jump()
 	{
 		anim.SetTrigger("Jump");
-		rigidbody2D.velocity = Vector2.zero;
-		rigidbody2D.AddForce (Vector2.up * JumpForce);
+		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		GetComponent<Rigidbody2D>().AddForce (Vector2.up * JumpForce);
 	}
 	
 	void WallJump(int direction)
 	{
 		anim.SetTrigger("Jump");
-		rigidbody2D.velocity = Vector2.zero;
-		rigidbody2D.AddForce (Vector2.up * WallJumpForce);
-		rigidbody2D.AddForce (Vector2.right * direction * WallJumpXForce);
+		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		GetComponent<Rigidbody2D>().AddForce (Vector2.up * WallJumpForce);
+		GetComponent<Rigidbody2D>().AddForce (Vector2.right * direction * WallJumpXForce);
 		timer = 0f;
 		speed = walkSpeed;
 	}
@@ -345,9 +345,9 @@ public class Player : MonoBehaviour {
 	void DashWallJump(int direction)
 	{
 		anim.SetTrigger("Jump");
-		rigidbody2D.velocity = Vector2.zero;
-		rigidbody2D.AddForce (Vector2.up * WallJumpForce);
-		rigidbody2D.AddForce (Vector2.right * direction * WallJumpXForce * dashModifier);
+		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		GetComponent<Rigidbody2D>().AddForce (Vector2.up * WallJumpForce);
+		GetComponent<Rigidbody2D>().AddForce (Vector2.right * direction * WallJumpXForce * dashModifier);
 		timer = 0f;
 		speed = dashSpeed;
 	}

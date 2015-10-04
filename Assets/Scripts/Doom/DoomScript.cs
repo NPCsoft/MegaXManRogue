@@ -61,11 +61,11 @@ public class DoomScript : MonoBehaviour {
 		if (falling)
 		{
 //			transform.Translate (Vector3.up * -vertSpeed * Time.deltaTime);
-			rigidbody2D.gravityScale = 1f;
+			GetComponent<Rigidbody2D>().gravityScale = 1f;
 		}
 		else
 		{
-			rigidbody2D.gravityScale = 0f;
+			GetComponent<Rigidbody2D>().gravityScale = 0f;
 		}
 
 		if (moveLeft)
@@ -95,14 +95,14 @@ public class DoomScript : MonoBehaviour {
 		}
 //		anim.Play ("PinkGround");
 		anim.Play ("Idle");
-		audio.PlayOneShot (laugh);
+		GetComponent<AudioSource>().PlayOneShot (laugh);
 		Invoke ("JumpToMid",1f);
 	}
 
 	void JumpToMid()
 	{
 //		jumping = true;
-		rigidbody2D.AddForce (Vector2.up * JumpForce);
+		GetComponent<Rigidbody2D>().AddForce (Vector2.up * JumpForce);
 		anim.Play ("ForwardJump");
 		if (doomPosition.localPosition.x > 0f)
 		{
@@ -120,7 +120,7 @@ public class DoomScript : MonoBehaviour {
 	void AirPink()
 	{
 //		jumping = false;
-		rigidbody2D.velocity = Vector2.zero;
+		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 		if (doomPosition.localPosition.x > playerLocation.localPosition.x)
 		{
 			doomSprite.localScale = new Vector3 (-1,1,1);
@@ -132,7 +132,7 @@ public class DoomScript : MonoBehaviour {
 		moveLeft = false;
 		moveRight = false;
 		anim.Play ("AirPink");
-		audio.PlayOneShot (pinkbeams);
+		GetComponent<AudioSource>().PlayOneShot (pinkbeams);
 		Invoke ("ContinueFallMid",1f);
 	}
 
@@ -163,7 +163,7 @@ public class DoomScript : MonoBehaviour {
 		}
 
 		anim.Play ("BeamGround");
-		audio.PlayOneShot (yellowbeam);
+		GetComponent<AudioSource>().PlayOneShot (yellowbeam);
 		Invoke ("JumpToEdge",1f);
 	}
 
@@ -182,13 +182,13 @@ public class DoomScript : MonoBehaviour {
 		{
 			moveLeft = true;
 //			jumping = true;
-			rigidbody2D.AddForce (Vector2.up * JumpForce);
+			GetComponent<Rigidbody2D>().AddForce (Vector2.up * JumpForce);
 		}
 		else
 		{
 			moveRight = true;
 //			jumping = true;
-			rigidbody2D.AddForce (Vector2.up * JumpForce);
+			GetComponent<Rigidbody2D>().AddForce (Vector2.up * JumpForce);
 		}
 
 		Invoke ("AirBeam",0.5f);
@@ -197,7 +197,7 @@ public class DoomScript : MonoBehaviour {
 	void AirBeam()
 	{
 //		jumping = false;
-		rigidbody2D.velocity = Vector2.zero;
+		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 		if (doomPosition.localPosition.x > playerLocation.localPosition.x)
 		{
 			doomSprite.localScale = new Vector3 (-1,1,1);
@@ -209,7 +209,7 @@ public class DoomScript : MonoBehaviour {
 		moveLeft = false;
 		moveRight = false;
 		anim.Play ("AirPink");
-		audio.PlayOneShot (pinkbeams);
+		GetComponent<AudioSource>().PlayOneShot (pinkbeams);
 		Invoke ("ContinueFallEdge",1f);
 	}
 

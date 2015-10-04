@@ -12,9 +12,9 @@ public class randomizehurtaudio : MonoBehaviour {
 	{
 		hurtnum = Random.Range (0,2);
 		if (hurtnum == 0)
-			audio.PlayOneShot (hurt1);
+			GetComponent<AudioSource>().PlayOneShot (hurt1);
 		else
-			audio.PlayOneShot (hurt2);
+			GetComponent<AudioSource>().PlayOneShot (hurt2);
 	}
 	
 	// Update is called once per frame

@@ -87,7 +87,7 @@ public class VenomScript : MonoBehaviour {
 	}
 
 	void WebAttack (){
-		audio.PlayOneShot (web);
+		GetComponent<AudioSource>().PlayOneShot (web);
 		anim.Play ("Webshot");
 		Invoke ("Crawl", 2f);
 	}
@@ -109,14 +109,14 @@ public class VenomScript : MonoBehaviour {
 	}
 
 	void Licking(){
-		audio.PlayOneShot (bite);
+		GetComponent<AudioSource>().PlayOneShot (bite);
 		crawling = false;
 		anim.Play ("Lick");
 		Invoke ("Whale",2f);
 	}
 
 	void BigBite(){
-		audio.PlayOneShot (bite);
+		GetComponent<AudioSource>().PlayOneShot (bite);
 
 		crawling = false;
 		anim.Play ("BigBite");
@@ -146,7 +146,7 @@ public class VenomScript : MonoBehaviour {
 
 	void ShadowStrike(){
 
-		audio.PlayOneShot (shadow);
+		GetComponent<AudioSource>().PlayOneShot (shadow);
 
 		anim.Play ("ShadowStrike");
 		Invoke ("Taunt",4f);

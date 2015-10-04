@@ -24,7 +24,7 @@ public class Magneto : MonoBehaviour {
 		healthanim.SetFloat ("bossHealth",EnemyHealth.currentHealth);
 		Invoke ("GetAirborn",3f);
 		anim = magnetoSprite.GetComponent<Animator>();
-		audio.PlayOneShot (supreme);
+		GetComponent<AudioSource>().PlayOneShot (supreme);
 
 	}
 	
@@ -41,7 +41,7 @@ public class Magneto : MonoBehaviour {
 			goLeft = false;
 			goRight = false;
 			anim.SetTrigger ("Dead");
-			rigidbody2D.gravityScale = 1f;
+			GetComponent<Rigidbody2D>().gravityScale = 1f;
 		}
 
 		if (!EnemyHealth.dead){
@@ -100,7 +100,7 @@ public class Magneto : MonoBehaviour {
 	}
 
 	void GroundShock(){
-		audio.PlayOneShot (chuckle);
+		GetComponent<AudioSource>().PlayOneShot (chuckle);
 
 		anim.Play ("GroundShock");
 		Invoke ("GetAirbornToOscilate",3f);

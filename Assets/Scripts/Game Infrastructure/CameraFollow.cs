@@ -51,7 +51,7 @@ public class CameraFollow : MonoBehaviour {
 		if (BossRoomWalls.camshake == true && shakedelay > 3f)
 		{
 			transform.Translate (Vector2.up * 0.1f);
-			audio.PlayOneShot (shakesound);
+			GetComponent<AudioSource>().PlayOneShot (shakesound);
 			Invoke ("Deshake", 0.01f);
 			shakedelay = 0f;
 		}
